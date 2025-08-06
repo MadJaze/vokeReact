@@ -1,0 +1,157 @@
+
+/* 00/0/0/0/0/0 main IMAGE ---- MENU ASIDE ------/0/0/0/0/0/0/0/0/0/*/
+
+
+.main-image {
+
+width: 83%;
+margin: auto;
+
+
+
+}
+
+.image{
+
+    width: 100%;
+   
+    border-radius: 16px;
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.a{
+
+
+    color: hsl(212, 56%, 36%);
+}
+
+.c{
+
+    color: #000000;
+}
+
+.b {
+
+color: #6C757D;
+
+}
+
+
+/*MENU ASIDE ***************************/
+
+@font-face {
+  font-family: 'Minecraftia-Regular';
+  src: url('../fonts/Minecraftia-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque';
+  src: url('../fonts/GalanoGrotesqueMedium.otf') format('truetype');
+}
+
+
+
+.body-container {
+
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px auto;
+    width: 83%;
+}
+
+.aside-container {
+
+flex: 0 0 23%;
+
+
+
+}
+
+.aside-container h2 {
+
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: rgb(38, 38, 38);
+    font-family: 'Minecraftia-Regular';
+}
+
+
+.aside-container p{
+
+
+font-family: 'GalanoGrotesque';
+
+} 
+
+.aside-container ul {
+
+    list-style: none;
+    padding: 0;
+    font-family: 'GalanoGrotesque';
+    font-weight: lighter;
+    color: rgba(26,26,26, 0.5);
+}
+
+.aside-container li {
+
+
+padding: 5px 0 5px 0;
+
+}
+
+
+/* CARDS INTERATIVAS PARA ENTRAR NA DESCRIÇÃO DO PRODUTO */
+
+
+.cards-container {
+
+   width: 77%;
+}
+
+.ordenador {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+font-weight: 900;
+    height: 64px;
+    
+}
+
+.ordenador p{
+
+
+margin-bottom: 20px;
+margin-right: 20px;
+    
+}
+
+/*TABLET RESPONSIVE MODE */
+
+@media (max-width: 480px) {
+
+    .main-image {
+
+        width: 97%;
+       
+    }
+
+     .main-image img{
+
+        width: 85%;
+        margin-left: 7%;
+       
+    }
+
+
+
+
+}

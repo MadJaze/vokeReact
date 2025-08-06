@@ -1,0 +1,157 @@
+{
+
+"products": [
+
+{
+    "id": 1,
+    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+    "SKU": "P007838-B",
+    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwe2639483/smartphones-apple/iPhone%2013%201.jpg",
+    "originalPrice": 3799,
+    "color": "Midnight Black",
+    "condition" : "Muito Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Apple"
+
+},
+
+{
+    "id": 2,
+    "name": "Apple iPhone SE 2ªGen 64GB 3GB iOS 4G Preto",
+    "SKU": "P007873-B",
+    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwf8e19ef0/smartphones-apple/iPhone%20SE%202Gen%201.jpg",
+    "originalPrice": 1044.05,
+    "color": "Preto",
+    "condition" : "Muito Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Apple"
+
+},
+{
+     "id": 3,
+    "name": "Samsung Galaxy A55 5G 128GB - Branco Azulado",
+    "SKU": "P008744-B",
+    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw0aa8510c/smartphones-samsung/Galaxy%20A55%20Branco%201.jpg",
+    "originalPrice": 1899.05,
+    "color": "Branco Azulado",
+    "condition" : "Muito Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Samsung"
+
+},
+{
+    "id": 4,
+    "name": "Samsung Galaxy Tab Active 2 SM-T395 16GB 3GB Preto",
+    "SKU": "P004837-B",
+    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw09165057/tablet-samsung/active2_1.png",
+    "originalPrice": 1629.00,
+    "color": "Preto",
+    "condition" : "Muito Bom",
+    "storageDevice" : "16GB",
+    "inStock" : 51,
+     "liquidaTech": true,
+    "brand": "Samsung"
+
+},
+
+{
+    "id": 5,
+    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+    "SKU": "P007838-B",
+    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
+    "originalPrice": 3799,
+    "color": "Midnight Black",
+    "condition" : "Muito Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Apple"
+
+},
+
+{
+    "id": 6,
+    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+    "SKU": "P007838-B",
+    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
+    "originalPrice": 3799,
+    "color": "Midnight Black",
+    "condition" : "Muito Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Apple"
+
+},
+
+{
+    "id": 7,
+    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+    "SKU": "P007838-B",
+     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
+    "originalPrice": 3799,
+    "color": "Midnight Black",
+    "condition" : "Muito Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Apple"
+
+},
+
+{
+    "id": 8,
+    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+    "SKU": "P007838-B",
+     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
+    "originalPrice": 3799.00,
+    "color": "Midnight Black",
+    "condition" : "Muito Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Apple"
+
+},
+
+{
+    "id": 9,
+    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+    "SKU": "P007838-B",
+    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
+    "originalPrice": 3799.00,
+    "color": "Midnight Black",
+    "condition" : "Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Apple"
+
+},
+
+{
+    "id": 10,
+    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+    "SKU": "P007838-B",
+     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
+    "originalPrice": 3799,
+    "color": "Midnight Black",
+    "condition" : "Muito Bom",
+    "storageDevice" : "128GB",
+    "inStock" : 5,
+     "liquidaTech": true,
+    "brand": "Apple"
+
+}
+
+]
+
+
+
+}

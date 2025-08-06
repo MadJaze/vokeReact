@@ -1,11 +1,396 @@
+/*Este arquivo contém a estilização do header e footer*/
+
+
+
+/*///////////////////////////////////////// HEADER 1 ----------------------------------------*/
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+
+  background-color: rgb(245, 243, 237);
 }
+
+.ev-topBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap : 20px;
+  background-color: black;
+  height: 20px;
+  padding: 8px; 
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+ 
+}
+
+
+
+  span {
+
+
+    display: flex;
+    width: 40%;
+    justify-content: center;
+  }
+
+.text-header-slider{
+font-size: 12px;
+
+
+}
+
+.icon-profile {
+
+
+  font-size: 22px;
+ 
+
+}
+
+.header-slider{
+
+background-color: black;
+color: white;
+width: 25px;
+
+
+}
+
+
+
+/*//////////////ooooo////ooo//oo// HEADER 2 ///////////////////oooo/////////////////oooooo///////////////////ooo*/
+
+.ev-header__columns {
+
+width: 100%;
+height: 64px;
+display: flex;
+background-color: white;
+
+}
+
+.container {
+
+width: 83%;
+padding: 3px  0 3px 0;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: white;
+overflow: hidden;
+
+
+}
+
+
+.barras-tablet-mode { display: none;}
+
+
+
+
+.imagem-logo{
+
+
+  width: 120px;
+}
+
+.search-field {
+
+
+  padding: 9px 16px;
+  border-radius: 6px;
+  width: 454px;
+  color: rgb(73, 80, 87);
+  border: 1px solid rgba(73, 80, 87, 0.2);
+}
+
+.coracao-carrinho {
+
+
+  display: flex;
+gap: 18px;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Minecraftia-Regular';
+  src: url('./fonts/Minecraftia-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque';
+  src: url('./fonts/GalanoGrotesqueMedium.otf') format('truetype');
+}
+
+/* MENU BANNER ROSA ooooooooo/o/o/o/o/o/o/o/o/o/o/o/o/o/o/o/o/o/o/o/o/o//o/o/o/o/o/o/o/o/o*/
+
+
+.header-tablet-mode{
+
+  display: none;
+
+}
+
+.container-menu-rosa {
+
+  background-color: rgb(254, 151, 197);
+
+}
+
+
+
+.ev-header__menu{
+
+  margin-top: 20px;
+  background-color: rgb(254, 151, 197);
+  display: flex;
+  width: 70%;
+  margin: auto;
+ 
+  align-items: center;
+  justify-content:space-between;
+}
+
+.ev-header__menu-list{
+  display: flex;
+ color: rgb(38, 38, 38);
+ font-family: 'Minecraftia-Regular';
+ font-size: 12px;
+ text-align: center;
+ margin: auto;
+ 
+ margin-top: 10px;
+ margin-right: 200px;
+list-style: none;
+gap: 10px;
+cursor: pointer;
+
+}
+
+.ev-header__menu-list-container{ /*ul*/
+  
+  align-items: center;
+  list-style: none;
+  height: 40px;
+}
+
+
+.ev-header__menu-item{ /*li*/
+
+ font-family: 'Minecraftia-Regular';
+ font-size: 12px;
+ text-align: center;
+ height: 40px;
+ text-decoration: none;
+ color: black;
+}
+
+.ev-header__menu-item a{ /*li*/
+
+
+ text-decoration: none;
+ color: #262626;
+}
+
+.ev-header_separator {
+  width: 1px;
+  height: 20px;
+  background-color: rgb(38, 38, 38);
+  margin: 0 10px;
+}
+
+.icon-menu-toggle {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+
+}
+
+.icon-menu-toggle p{
+font-size: 10px;
+
+margin: 5px  0 0 5px;
+font-family: 'Minecraftia-Regular';
+
+}
+
+
+/*/O/O/O/O/O/O/O/O/O/O/O/O/O/O/O/OO/O/OOOOO FOOTER CONTAINER OOOO///O/O/O/O/O/O/O/O/O/O/O/O/O/O/O/O/OO/*/
+
+#footer-container-main{
+
+
+  background-color: rgb(41, 89, 145);
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+ 
+}
+
+
+.footer-container-sub {
+
+  width: 80%;
+  display: flex;
+ 
+  padding-top: 40px;
+  margin: auto;
+
+}
+
+.footer-sub-item-left {
+
+  text-align: start;
+
+
+}
+
+.footer-sub-item-left img {
+
+  margin-top: 90px;
+  margin-right: 50px;
+  cursor: pointer;
+
+
+}
+
+.footer-sub-item-left h1 {
+
+font-family: 'Minecraftia-Regular';
+font-size: 20px;
+letter-spacing: 0.3cqh;
+font-weight: 300;
+margin: 0;
+
+
+}
+
+.footer-sub-item-left p {
+
+margin: 0;
+
+}
+
+
+/*00000///0//0/0/0/0/0/0/0/0/0/0/00/// FOOTER RIGHT SIDE* 00000///0//0/0/0/0/0/0/0/0/0/0/00////*/
+
+.footer-sub-item-right1{
+
+display: flex;
+height: 50px;
+margin-left: 60px;
+
+
+}
+
+.input_inscreva-se_footer {
+
+padding: 5px 10px 5px 10px; 
+ color: rgb(73, 80, 87);
+font-size: 16px;
+border-radius: 25px;
+margin: 0 20px 0 20px;
+height: 38px;
+
+}
+
+#inscreva-se_button {
+
+  background-color: rgb(242, 191, 79);
+  color: white;
+  margin-left: 20px;
+  height: 50px;
+  border: none;
+  font-weight: 800;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.footer-sub-item-right2{
+
+display: grid;
+grid-template-columns: repeat(3, 0.7fr);
+margin-left: 80px;
+
+}
+
+.options-footer {
+
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+margin-top: 50px;
+  font-family: 'GalanoGrotesque', sans-serif;
+  list-style: none;
+  text-align: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.options-footer li {
+
+    
+  margin: 12px 0 12px 0;
+ 
+}
+
+.hr {
+
+width: 80%;
+background-color: rgb(39, 63, 91);
+height: 1px;
+margin: 20px auto;
+
+}
+
+.last-div-footer {
+  
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+
+.last-div-footer p{
+  
+font-size: 14px;
+font-family: 'GalanoGrotesque', sans-serif;
+
+
+}
+
+.last-div-footer .last-div-footer-icons ul {
+
+  display: flex;
+  
+ list-style: none;
+  align-items: center;
+}
+
+.last-div-footer .last-div-footer-icons ul li {
+
+  margin-left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.forbidden-images-tablet-mode {
+  display: none;
+}
+
+/*
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,16 +398,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -35,4 +410,277 @@
   to {
     transform: rotate(360deg);
   }
+}
+*/
+
+
+/*Responsividade para tablets (FOOTER AND HEADER)*/
+/*Header*/
+
+
+@media (max-width: 480px) {
+
+  .ev-topBanner p {
+
+width: 100%;
+
+  }
+
+
+  .search-field {
+
+display: none;
+
+  }
+
+  .barras-tablet-mode { display: block;}
+
+.imagem-logo {
+
+  margin: auto;
+  width: 110px;
+}
+
+
+.barras {
+
+  display: none;
+}
+
+.container {
+
+
+  width: 100%;
+  margin: 0 10px 0 10px;
+}
+
+.container-menu-rosa {
+
+  display: none;
+}
+
+
+.header-tablet-mode{
+
+  display: block;
+
+}
+
+
+.header-tablet-mode{
+
+
+  display: flex;
+  justify-content: center;
+}
+
+.search-field-tablet-mode {
+
+
+  padding: 9px 16px;
+  border-radius: 6px;
+  width: 85%;
+  color: rgb(73, 80, 87);
+  border: 1px solid rgba(73, 80, 87, 0.2);
+}
+
+
+/* FOOTER TABLET MODE FROM HERE*/
+
+
+
+
+/**/
+
+.footer-container-main{
+
+    position: relative;
+}
+
+
+.footer-container-sub {
+
+  
+  display: flex;
+ flex-direction: column;
+  padding-top: 40px;
+  margin: auto;
+  width: 93%;
+
+
+}
+
+.footer-sub-item-left {
+
+  text-align: start;
+
+
+}
+
+.footer-sub-item-left img {
+
+  margin-top: 90px;
+  margin-right: 50px;
+  cursor: pointer;
+
+
+}
+
+.footer-sub-item-left h1 {
+
+font-family: 'Minecraftia-Regular';
+font-size: 20px;
+letter-spacing: 0.3cqh;
+font-weight: 300;
+margin: 0;
+
+
+}
+
+.footer-sub-item-left p {
+
+margin: 0;
+
+}
+
+
+/*00000///0//0/0/0/0/0/0/0/0/0/0/00/// FOOTER RIGHT SIDE* 00000///0//0/0/0/0/0/0/0/0/0/0/00////*/
+
+.footer-sub-item-right1{
+
+display: flex;
+flex-direction: column;
+height: 80px;
+width: 100%;
+margin: 15px 0 10px 0;
+ 
+
+
+}
+
+.input_inscreva-se_footer {
+
+padding: 15px 20px 15px 30px; 
+ color: rgb(73, 80, 87);
+font-size: 16px;
+width: 86%;
+border-radius: 25px;
+margin: 5px 0;
+height: 68px;
+
+}
+
+#inscreva-se_button {
+
+  background-color: rgb(242, 191, 79);
+  color: white;
+ 
+  margin: auto;
+  margin-top: 10px;
+  height: 70px;
+  border: none;
+  width: fit-content;
+  font-weight: 800;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.footer-sub-item-right2{
+
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+margin: auto;
+margin-top: 200px;
+
+}
+
+.options-footer {
+
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+margin-top: 5px;
+  font-family: 'GalanoGrotesque', sans-serif;
+  list-style: none;
+  text-align: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.options-footer li {
+
+    
+  margin: 12px 0 12px 0;
+ 
+}
+
+.hr {
+
+width: 80%;
+background-color: rgb(39, 63, 91);
+height: 1px;
+margin: 20px auto;
+
+}
+
+.last-div-footer {
+  
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+
+.last-div-footer p{
+  
+font-size: 14px;
+font-family: 'GalanoGrotesque', sans-serif;
+
+
+}
+
+.last-div-footer .last-div-footer-icons ul {
+
+  display: flex;
+  
+ list-style: none;
+  align-items: center;
+}
+
+.last-div-footer .last-div-footer-icons ul li {
+
+  margin-left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+
+.forbidden-copy-image1 {
+
+
+display: none;
+
+}
+
+.forbidden-copy-image2 {
+
+
+display: none;
+
+}
+
+.forbidden-images-tablet-mode {
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 }
