@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { getProducts } from "./api";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faHeart } from '@fortawesome/free-regular-svg-icons';
@@ -12,11 +13,17 @@ export default function Cards() {
 
 const [products, setProducts] = useState([]);
 
+//Filtro por marca (brand) Esse hook aqui accede dinamicamente aos parámetros do db.json (maravilha)
+
+const { brand } = useParams(); 
+ 
+
+
 // 2. Função para ser chamada no useEffect para carregar produto na tela 
 
 const fetchProducts = async () => {
 
-    const res = await getProducts(); //Extrair os produtos do JSON e uma vez feito...
+    const res = await getProducts(brand); //Extrair os produtos do JSON e uma vez feito...
     console.log("respuesta", res.data);
     setProducts(res.data);
 }
@@ -29,13 +36,14 @@ useEffect (() => {
 fetchProducts()
 
 
-}, [])
+}, [brand])
 
 
 return (
 
 
 <div className="cards-container">
+ 
     <div className="ordenador">
        
         <p>Ordenar por</p>
@@ -65,7 +73,7 @@ return (
 
                     return (
 
-<div className='proper_card'> 
+<div className='proper_card' key={product.id}> 
 
             <div className='ev_cards_inStock_container'> 
 
@@ -90,7 +98,7 @@ return (
 
     <div className='product_card_condition'>   
         <img src="https://www.voke.shop/on/demandware.static/Sites-Voke-Site/-/default/dw4f718762/images/icons/badge-2.svg"
-        width="25"></img>
+        width="25" alt="conditional issue"></img>
     <p> {product.condition} </p>
     </div>
 

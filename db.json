@@ -13,7 +13,7 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Apple"
+    "brand": "apple"
 
 },
 
@@ -28,7 +28,7 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Apple"
+    "brand": "apple"
 
 },
 {
@@ -42,7 +42,7 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Samsung"
+    "brand": "samsung"
 
 },
 {
@@ -56,7 +56,7 @@
     "storageDevice" : "16GB",
     "inStock" : 51,
      "liquidaTech": true,
-    "brand": "Samsung"
+    "brand": "samsung"
 
 },
 
@@ -71,7 +71,7 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Apple"
+    "brand": "apple"
 
 },
 
@@ -86,7 +86,7 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Apple"
+    "brand": "apple"
 
 },
 
@@ -101,7 +101,7 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Apple"
+    "brand": "apple"
 
 },
 
@@ -116,7 +116,7 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Apple"
+    "brand": "apple"
 
 },
 
@@ -131,7 +131,7 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Apple"
+    "brand": "apple"
 
 },
 
@@ -146,7 +146,82 @@
     "storageDevice" : "128GB",
     "inStock" : 5,
      "liquidaTech": true,
-    "brand": "Apple"
+    "brand": "apple"
+
+},
+
+{
+    "id": 12,
+    "name": "Chromebook Lenovo 100E 2nd Celeron N4000 32GB 4GB ChromeOS",
+    "SKU": "P006204-C",
+     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwce021de8/notebooks-lenovo/Chromebook%20Lenovo%20100E%202ND%201.jpg", 
+    "originalPrice": 909.00,
+    "color": "Preto",
+    "condition" : "Muito Bom",
+    "storageDevice" : "32GB",
+    "inStock" : 32,
+     "liquidaTech": true,
+    "brand": "lenovo"
+
+},
+
+{
+    "id": 11,
+    "name": "Notebook Thinkpad T14 Gen 2I Core I5-11G° SSD 256Gb 16G RAM - 14' Win 11 Pro",
+    "SKU": "P008523-B",
+     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwde4bcb8f/notebooks-lenovo/T14.jpg", 
+    "originalPrice": 3249.00,
+    "color": "Preto",
+    "condition" : "Muito Bom",
+    "storageDevice" : "256GB",
+    "inStock" : 34,
+     "liquidaTech": false,
+    "brand": "lenovo"
+
+},
+
+{
+    "id": 13,
+    "name": "Computador Thinkcentre M70Q Intel Celeron SSD 240GB 8GB Windows 10 Pro",
+    "SKU": "P008587-B",
+     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw05a8b9e5/desktops-lenovo/Thinkcentre%20M710Q%201.jpg", 
+    "originalPrice": 999.00,
+    "color": "Preto",
+    "condition" : "Muito Bom",
+    "storageDevice" : "240GB",
+    "inStock" : 11,
+     "liquidaTech": false,
+    "brand": "lenovo"
+
+},
+
+{
+    "id": 14,
+    "name": "Kit Computador Lenovo M70Q Celeron SSD 240GB 8GB Win 10 Pro + Monitor Lenovo D1960WA 19P VGA",
+    "SKU": "KIT338",
+     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw0fed08a9/Kits/KIT338.jpg", 
+    "originalPrice": 1025.05,
+    "color": "NoInfo",
+    "condition" : "Muito Bom",
+    "storageDevice" : "240GB",
+    "inStock" : 1,
+     "liquidaTech": false,
+    "brand": "lenovo"
+
+},
+
+{
+    "id": 15,
+    "name": "Notebook Dell Latitude 3420 Core i5 11ªGen SSD 256GB 16GB Win 11 Pro",
+    "SKU": "P008697-B",
+     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwa39b5a13/notebooks-dell/Latitude%203420%201.jpg", 
+    "originalPrice": 2754.05,
+    "color": "Preto",
+    "condition" : "Muito Bom",
+    "storageDevice" : "256GB",
+    "inStock" : 22,
+     "liquidaTech": false,
+    "brand": "dell"
 
 }
 
