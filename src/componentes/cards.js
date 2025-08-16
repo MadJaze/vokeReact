@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProducts } from "./api";
+import { getProducts, deleteProduct } from "./api";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faHeart } from '@fortawesome/free-regular-svg-icons';
-
+import {  faPenToSquare } from '@fortawesome/free-regular-svg-icons';
+import Modal from 'react-modal';
 import './cards.css'
 
 
@@ -12,6 +12,7 @@ export default function Cards() {
 // 1. Obter do JSON os produtos da loja usando useState 
 
 const [products, setProducts] = useState([]);
+
 
 //Filtro por marca (brand) Esse hook aqui accede dinamicamente aos parámetros do db.json (maravilha)
 
@@ -37,6 +38,29 @@ fetchProducts()
 
 
 }, [brand])
+
+
+  const handleDelete = async (id) => {
+    try {
+        await deleteProduct(id); // Espera que termine
+        await fetchProducts();   // Luego actualiza
+    } catch (error) {
+        console.error("Erro ao deletar o contato:", error);
+    }
+};
+
+
+
+////////////////////////////MODALS////////////////////////////////
+
+
+
+
+
+
+
+
+////////////////////END
 
 
 return (
@@ -69,7 +93,7 @@ return (
                          {products.map((product) => {
 
 
-                //Apaga o elemento ao ser clickado
+                
 
                     return (
 
@@ -83,12 +107,14 @@ return (
 
                 </div>
                  <div className='ev_cards_inStock_Icons'>
-                            <FontAwesomeIcon icon={faHeart} className='heart_icon' />
-                             <img
-                             src="https://cdn-icons-png.flaticon.com/512/1124/1124199.png"
-                              width="20"
-                            alt="carrinho"
-                             />
+                
+                <div class="product-actions">
+
+                           <button class="edit-btn"> <FontAwesomeIcon icon={faPenToSquare} onClick={ () => handleDelete(product.id) } className='heart_icon' /></button>
+ 
+                             <button class="delete-btn" onClick={ () => handleDelete(product.id) }>Deletar</button>
+
+                             </div>
                 </div>
      </div>
 

@@ -15,3 +15,19 @@ export const getProducts = (brand) => {
 
 }
 
+
+
+export const deleteProduct = async (id) => {
+
+    const deleteUrl = `${API_URL}/products/${id}`
+    //console.log(id);
+    return await axios.delete(deleteUrl);
+
+}
+
+
+
+
+
+
+

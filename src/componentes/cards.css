@@ -41,6 +41,25 @@ transition:  0.4s ease;
 
 }
 
+.product-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin: 0 5px;
+}
+
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-btn {
+   background-color: #dc3545;
+   color:  white;
+}
 
 .proper_card:hover{
 

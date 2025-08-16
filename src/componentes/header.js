@@ -35,7 +35,9 @@ const Header = () => {
           <input placeholder="Encontre o que precisa" className="search-field" />
           <div className="coracao-carrinho">
             <FontAwesomeIcon icon={faHeart} />
+            <Link to="/login">
             <FontAwesomeIcon icon={faBars}  className='barras'/>
+            </Link> 
             <img
               src="https://cdn-icons-png.flaticon.com/512/1124/1124199.png"
               width="20"

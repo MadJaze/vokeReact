@@ -1,232 +1,134 @@
 {
-
-"products": [
-
-{
-    "id": 1,
-    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-    "SKU": "P007838-B",
-    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwe2639483/smartphones-apple/iPhone%2013%201.jpg",
-    "originalPrice": 3799,
-    "color": "Midnight Black",
-    "condition" : "Muito Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "apple"
-
-},
-
-{
-    "id": 2,
-    "name": "Apple iPhone SE 2ªGen 64GB 3GB iOS 4G Preto",
-    "SKU": "P007873-B",
-    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwf8e19ef0/smartphones-apple/iPhone%20SE%202Gen%201.jpg",
-    "originalPrice": 1044.05,
-    "color": "Preto",
-    "condition" : "Muito Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "apple"
-
-},
-{
-     "id": 3,
-    "name": "Samsung Galaxy A55 5G 128GB - Branco Azulado",
-    "SKU": "P008744-B",
-    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw0aa8510c/smartphones-samsung/Galaxy%20A55%20Branco%201.jpg",
-    "originalPrice": 1899.05,
-    "color": "Branco Azulado",
-    "condition" : "Muito Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "samsung"
-
-},
-{
-    "id": 4,
-    "name": "Samsung Galaxy Tab Active 2 SM-T395 16GB 3GB Preto",
-    "SKU": "P004837-B",
-    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw09165057/tablet-samsung/active2_1.png",
-    "originalPrice": 1629.00,
-    "color": "Preto",
-    "condition" : "Muito Bom",
-    "storageDevice" : "16GB",
-    "inStock" : 51,
-     "liquidaTech": true,
-    "brand": "samsung"
-
-},
-
-{
-    "id": 5,
-    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-    "SKU": "P007838-B",
-    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
-    "originalPrice": 3799,
-    "color": "Midnight Black",
-    "condition" : "Muito Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "apple"
-
-},
-
-{
-    "id": 6,
-    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-    "SKU": "P007838-B",
-    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
-    "originalPrice": 3799,
-    "color": "Midnight Black",
-    "condition" : "Muito Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "apple"
-
-},
-
-{
-    "id": 7,
-    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-    "SKU": "P007838-B",
-     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
-    "originalPrice": 3799,
-    "color": "Midnight Black",
-    "condition" : "Muito Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "apple"
-
-},
-
-{
-    "id": 8,
-    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-    "SKU": "P007838-B",
-     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
-    "originalPrice": 3799.00,
-    "color": "Midnight Black",
-    "condition" : "Muito Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "apple"
-
-},
-
-{
-    "id": 9,
-    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-    "SKU": "P007838-B",
-    "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
-    "originalPrice": 3799.00,
-    "color": "Midnight Black",
-    "condition" : "Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "apple"
-
-},
-
-{
-    "id": 10,
-    "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-    "SKU": "P007838-B",
-     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg", 
-    "originalPrice": 3799,
-    "color": "Midnight Black",
-    "condition" : "Muito Bom",
-    "storageDevice" : "128GB",
-    "inStock" : 5,
-     "liquidaTech": true,
-    "brand": "apple"
-
-},
-
-{
-    "id": 12,
-    "name": "Chromebook Lenovo 100E 2nd Celeron N4000 32GB 4GB ChromeOS",
-    "SKU": "P006204-C",
-     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwce021de8/notebooks-lenovo/Chromebook%20Lenovo%20100E%202ND%201.jpg", 
-    "originalPrice": 909.00,
-    "color": "Preto",
-    "condition" : "Muito Bom",
-    "storageDevice" : "32GB",
-    "inStock" : 32,
-     "liquidaTech": true,
-    "brand": "lenovo"
-
-},
-
-{
-    "id": 11,
-    "name": "Notebook Thinkpad T14 Gen 2I Core I5-11G° SSD 256Gb 16G RAM - 14' Win 11 Pro",
-    "SKU": "P008523-B",
-     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwde4bcb8f/notebooks-lenovo/T14.jpg", 
-    "originalPrice": 3249.00,
-    "color": "Preto",
-    "condition" : "Muito Bom",
-    "storageDevice" : "256GB",
-    "inStock" : 34,
-     "liquidaTech": false,
-    "brand": "lenovo"
-
-},
-
-{
-    "id": 13,
-    "name": "Computador Thinkcentre M70Q Intel Celeron SSD 240GB 8GB Windows 10 Pro",
-    "SKU": "P008587-B",
-     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw05a8b9e5/desktops-lenovo/Thinkcentre%20M710Q%201.jpg", 
-    "originalPrice": 999.00,
-    "color": "Preto",
-    "condition" : "Muito Bom",
-    "storageDevice" : "240GB",
-    "inStock" : 11,
-     "liquidaTech": false,
-    "brand": "lenovo"
-
-},
-
-{
-    "id": 14,
-    "name": "Kit Computador Lenovo M70Q Celeron SSD 240GB 8GB Win 10 Pro + Monitor Lenovo D1960WA 19P VGA",
-    "SKU": "KIT338",
-     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw0fed08a9/Kits/KIT338.jpg", 
-    "originalPrice": 1025.05,
-    "color": "NoInfo",
-    "condition" : "Muito Bom",
-    "storageDevice" : "240GB",
-    "inStock" : 1,
-     "liquidaTech": false,
-    "brand": "lenovo"
-
-},
-
-{
-    "id": 15,
-    "name": "Notebook Dell Latitude 3420 Core i5 11ªGen SSD 256GB 16GB Win 11 Pro",
-    "SKU": "P008697-B",
-     "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwa39b5a13/notebooks-dell/Latitude%203420%201.jpg", 
-    "originalPrice": 2754.05,
-    "color": "Preto",
-    "condition" : "Muito Bom",
-    "storageDevice" : "256GB",
-    "inStock" : 22,
-     "liquidaTech": false,
-    "brand": "dell"
-
-}
-
-]
-
-
-
+  "products": [
+    {
+      "id": "1",
+      "name": "Samsung iPhone 23 8G 528TB - Dinossaur",
+      "SKU": "P007838-B",
+      "image": "https://imgs.search.brave.com/CbpHn8TwqU2TG7krRz58wVMndW0MX4zLTXh6oQXGd-E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzU4MDUwNzkwL3Iv/aWwvY2I4MGUyLzY3/NTM5NDc5NTgvaWxf/MzAweDMwMC42NzUz/OTQ3OTU4X3l6ajcu/anBn",
+      "originalPrice": 3799,
+      "color": "Midnight Black",
+      "condition": "Muito Bom",
+      "storageDevice": "128GB",
+      "inStock": 5,
+      "liquidaTech": true,
+      "brand": "samsung"
+    },
+      {
+      "id": "1",
+      "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+      "SKU": "P007838-B",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwe2639483/smartphones-apple/iPhone%2013%201.jpg",
+      "originalPrice": 3799,
+      "color": "Midnight Black",
+      "condition": "Muito Bom",
+      "storageDevice": "128GB",
+      "inStock": 5,
+      "liquidaTech": true,
+      "brand": "apple"
+    },
+    {
+      "id": "3",
+      "name": "Samsung Galaxy A55 5G 128GB - Branco Azulado",
+      "SKU": "P008744-B",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw0aa8510c/smartphones-samsung/Galaxy%20A55%20Branco%201.jpg",
+      "originalPrice": 1899.05,
+      "color": "Branco Azulado",
+      "condition": "Muito Bom",
+      "storageDevice": "128GB",
+      "inStock": 5,
+      "liquidaTech": true,
+      "brand": "samsung"
+    },
+    {
+      "id": "4",
+      "name": "Samsung Galaxy Tab Active 2 SM-T395 16GB 3GB Preto",
+      "SKU": "P004837-B",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw09165057/tablet-samsung/active2_1.png",
+      "originalPrice": 1629,
+      "color": "Preto",
+      "condition": "Muito Bom",
+      "storageDevice": "16GB",
+      "inStock": 51,
+      "liquidaTech": true,
+      "brand": "samsung"
+    },
+    {
+      "id": "6",
+      "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+      "SKU": "P007838-B",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwfc41066a/smartphones-apple/iPhone%2012%20Preto%201.jpg",
+      "originalPrice": 3799,
+      "color": "Midnight Black",
+      "condition": "Muito Bom",
+      "storageDevice": "128GB",
+      "inStock": 5,
+      "liquidaTech": true,
+      "brand": "apple"
+    },
+    {
+      "id": "12",
+      "name": "Chromebook Lenovo 100E 2nd Celeron N4000 32GB 4GB ChromeOS",
+      "SKU": "P006204-C",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwce021de8/notebooks-lenovo/Chromebook%20Lenovo%20100E%202ND%201.jpg",
+      "originalPrice": 909,
+      "color": "Preto",
+      "condition": "Muito Bom",
+      "storageDevice": "32GB",
+      "inStock": 32,
+      "liquidaTech": true,
+      "brand": "lenovo"
+    },
+    {
+      "id": "11",
+      "name": "Notebook Thinkpad T14 Gen 2I Core I5-11G° SSD 256Gb 16G RAM - 14' Win 11 Pro",
+      "SKU": "P008523-B",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwde4bcb8f/notebooks-lenovo/T14.jpg",
+      "originalPrice": 3249,
+      "color": "Preto",
+      "condition": "Muito Bom",
+      "storageDevice": "256GB",
+      "inStock": 34,
+      "liquidaTech": false,
+      "brand": "lenovo"
+    },
+    {
+      "id": "13",
+      "name": "Computador Thinkcentre M70Q Intel Celeron SSD 240GB 8GB Windows 10 Pro",
+      "SKU": "P008587-B",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw05a8b9e5/desktops-lenovo/Thinkcentre%20M710Q%201.jpg",
+      "originalPrice": 999,
+      "color": "Preto",
+      "condition": "Muito Bom",
+      "storageDevice": "240GB",
+      "inStock": 11,
+      "liquidaTech": false,
+      "brand": "lenovo"
+    },
+    {
+      "id": "14",
+      "name": "Kit Computador Lenovo M70Q Celeron SSD 240GB 8GB Win 10 Pro + Monitor Lenovo D1960WA 19P VGA",
+      "SKU": "KIT338",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw0fed08a9/Kits/KIT338.jpg",
+      "originalPrice": 1025.05,
+      "color": "NoInfo",
+      "condition": "Muito Bom",
+      "storageDevice": "240GB",
+      "inStock": 1,
+      "liquidaTech": false,
+      "brand": "lenovo"
+    },
+    {
+      "id": "15",
+      "name": "Notebook Dell Latitude 3420 Core i5 11ªGen SSD 256GB 16GB Win 11 Pro",
+      "SKU": "P008697-B",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwa39b5a13/notebooks-dell/Latitude%203420%201.jpg",
+      "originalPrice": 2754.05,
+      "color": "Preto",
+      "condition": "Muito Bom",
+      "storageDevice": "256GB",
+      "inStock": 22,
+      "liquidaTech": false,
+      "brand": "dell"
+    }
+  ]
 }
