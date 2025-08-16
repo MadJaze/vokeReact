@@ -14,7 +14,7 @@
       "brand": "samsung"
     },
       {
-      "id": "1",
+      "id": "56",
       "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
       "SKU": "P007838-B",
       "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwe2639483/smartphones-apple/iPhone%2013%201.jpg",
@@ -130,5 +130,33 @@
       "liquidaTech": false,
       "brand": "dell"
     }
+  ],
+
+    "users": [
+    {
+      "id": "1",
+      "name": "Samsung iPhone 23 8G 528TB - Dinossaur",
+      "SKU": "P007838-B"
+      
+    },
+      {
+      "id": "56",
+      "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
+      "SKU": "P007838-B"
+      
+    },
+    {
+      "id": "3",
+      "name": "Samsung Galaxy A55 5G 128GB - Branco Azulado",
+      "SKU": "P008744-B"
+     
+    },
+    {
+      "id": "4",
+      "name": "Samsung Galaxy Tab Active 2 SM-T395 16GB 3GB Preto",
+      "SKU": "P004837-B"
+     
+    }
+    
   ]
 }
