@@ -1,10 +1,17 @@
 import '../App.css';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser, faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faChevronRight, faChevronLeft, faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'; 
 
 const Header = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+
+
+
   return (
     <header>
       <div className="ev-topBanner">
@@ -25,7 +32,9 @@ const Header = () => {
 
       <div className="ev-header__columns">
         <div className="container">
+          <button onClick={() => setMenuOpen(true)} className='barras-tablet-mode'>
           <FontAwesomeIcon icon={faBars}  className='barras-tablet-mode'/>
+          </button>
           <img
             className="imagem-logo"
             src="https://www.voke.shop/on/demandware.static/Sites-Voke-Site/-/default/dwf3e412cb/images/voke-logo-255.png"
@@ -89,6 +98,82 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      
+
+      {menuOpen && (
+<>
+
+<div className='overlay' onClick={() => setMenuOpen(false)}></div>
+
+<div className='menu-special-tablet'>
+
+<div className='bemvindo-tablet-mode'>
+
+<p>Olá, Seja bemvindo(a)</p>
+<p>Minha Conta</p>
+
+</div>
+
+<h3>Departamentos</h3>
+
+<ul>
+
+<li>Notebooks</li>
+<hr></hr>
+<li>Computadores</li>
+<hr></hr>
+<li>Smartphone</li>
+<hr></hr>
+<li>Tablet</li>
+<hr></hr>
+<li>Monitor</li>
+<hr></hr>
+<li>Accesórios e Periféricos</li>
+<hr></hr>
+<li>Apple</li>
+<hr></hr>
+<li>Chromebook</li>
+<hr></hr>
+<li>Notebook Gamer</li>
+<hr></hr>
+
+
+
+
+</ul>
+
+<div className='sua-empresa-section-tablet'>
+
+  <h4>Para sua Empresa</h4>
+<p>Temos as melhores soluções de gestão de hardwares para sua empresa. confira!</p>
+
+
+</div>
+
+<div className='lista-de-link-tablet-mode'>
+
+<ul>
+
+<li className='brand-list-tablet-mode' onClick={()=> setMenuOpen(false)}><Link to="/">Liquida Tech</Link></li>
+<li className='brand-list-tablet-mode' onClick={()=> setMenuOpen(false)}><Link to="/apple">Apple</Link></li>
+<li className='brand-list-tablet-mode' onClick={()=> setMenuOpen(false)} ><Link to="/samsung">Samsung</Link></li>
+<li className='brand-list-tablet-mode' onClick={()=> setMenuOpen(false)}><Link to="/lenovo">Lenovo</Link></li>
+<li className='brand-list-tablet-mode' onClick={()=> setMenuOpen(false)}><Link to="/dell">Dell</Link></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</>
+
+
+      )}
+
+
+     
     </header>
   );
 };

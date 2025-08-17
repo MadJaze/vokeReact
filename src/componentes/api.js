@@ -8,7 +8,7 @@ const API_URL = "http://localhost:3000"
 export const getProducts = (brand) => { 
     
     const url = brand ? `${API_URL}/products?brand=${brand}`
-    : `${API_URL}/products`
+    : `${API_URL}/products?liquidaTech=${true}`
  
    return axios.get(url);
 

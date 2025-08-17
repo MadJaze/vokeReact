@@ -1,19 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Samsung iPhone 23 8G 528TB - Dinossaur",
-      "SKU": "P007838-B",
-      "image": "https://imgs.search.brave.com/CbpHn8TwqU2TG7krRz58wVMndW0MX4zLTXh6oQXGd-E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzU4MDUwNzkwL3Iv/aWwvY2I4MGUyLzY3/NTM5NDc5NTgvaWxf/MzAweDMwMC42NzUz/OTQ3OTU4X3l6ajcu/anBn",
-      "originalPrice": 3799,
-      "color": "Midnight Black",
-      "condition": "Muito Bom",
-      "storageDevice": "128GB",
-      "inStock": 5,
-      "liquidaTech": true,
-      "brand": "samsung"
-    },
-    {
       "id": "56",
       "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
       "SKU": "P007838-B",
@@ -66,19 +53,6 @@
       "brand": "apple"
     },
     {
-      "id": "12",
-      "name": "Chromebook Lenovo 100E 2nd Celeron N4000 32GB 4GB ChromeOS",
-      "SKU": "P006204-C",
-      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwce021de8/notebooks-lenovo/Chromebook%20Lenovo%20100E%202ND%201.jpg",
-      "originalPrice": 909,
-      "color": "Preto",
-      "condition": "Muito Bom",
-      "storageDevice": "32GB",
-      "inStock": 32,
-      "liquidaTech": true,
-      "brand": "lenovo"
-    },
-    {
       "id": "11",
       "name": "Notebook Thinkpad T14 Gen 2I Core I5-11G° SSD 256Gb 16G RAM - 14' Win 11 Pro",
       "SKU": "P008523-B",
@@ -129,6 +103,18 @@
       "inStock": 22,
       "liquidaTech": false,
       "brand": "dell"
+    },
+    {
+      "id": "d4cd",
+      "name": "Gato",
+      "sku": "otroGato",
+      "image": "https://imgs.search.brave.com/ahe_rY6qHkk9Urx1EvPipcY86xkWKFlVWKWAYyPMd14/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hZG1p/bi5jbm5icmFzaWwu/Y29tLmJyL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9zaXRlcy8xMi8y/MDI1LzA1L2dhdG8t/bGFyYW5qYS1maWxo/b3RlLmpwZz93PTg0/OSZoPTQ3NyZjcm9w/PTA",
+      "originalPrice": 590,
+      "condition": "Bom",
+      "color": "",
+      "inStock": 14,
+      "liquidaTech": false,
+      "brand": "samsung"
     }
   ],
   "users": [

@@ -433,7 +433,10 @@ display: none;
 
   }
 
-  .barras-tablet-mode { display: block;}
+  .barras-tablet-mode { display: block;
+  
+  border: none;
+  }
 
 .imagem-logo {
 
@@ -682,5 +685,92 @@ display: none;
   justify-content: space-between;
 }
 
+.overlay {
+
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0, 0.5);
+z-index: 10;
+transition: 'all 0.2s';
+
+}
+
+.menu-special-tablet {
+
+
+  position: fixed;
+  top: 0;
+  font-family: 'GalanoGrotesque';
+  color:#295991;
+  left: 0;
+  width: 60%;
+  height: 100%;
+background-color: white;
+z-index: 20;
+overflow-y: auto;
+overflow-x: hidden;
+transition: 'all 0.2s';
+
+
+}
+
+.bemvindo-tablet-mode {
+
+background-color: #EAECF0;
+padding: 10px 20px;
+
+
+}
+
+.bemvindo-tablet-mode p {
+
+background-color: #EAECF0;
+ margin: 0;
+
+}
+
+.sua-empresa-section-tablet {
+
+background-color: #295991;
+border-radius: 20px;
+padding: 5px 20px;
+margin: 20px;
+color: white;
+text-align: center;
+
+}
+
+.menu-special-tablet ul {
+
+
+  list-style: none;
+  padding: 10px;
+
+
+}
+
+.brand-list-tablet-mode{
+
+width: fit-content;
+margin-bottom: 20px;
+
+
+}
+
+.brand-list-tablet-mode a{
+
+text-decoration: none;
+color: inherit;
+
+} 
+
+.menu-special-tablet h3 {
+
+
+  margin-left : 10px;
+}
 
 }
