@@ -15,6 +15,11 @@ export const getProducts = (brand) => {
 
 }
 
+export const addProduct = (product) => axios.post(`${API_URL}/products`, product);
+
+
+// isso aqui para fazer reposição post, para executar, precisamos de um componente para isso.
+
 
 
 export const deleteProduct = async (id) => {

@@ -3,10 +3,9 @@ import Footer from './componentes/footer.js';
 import Header from './componentes/header.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 import VokeComponent from './login.js';
-import ParOuImpar from './pages/parOuImpar';
+import ProductForm from './componentes/postProducts.js';
 import MainImage from './componentes/mainImage.js';
-import MenuAside from './componentes/menuAside.js'; // Importando o componente MenuAside
-import Contador from './componentes/contador.js'; // Importando o componente Contador
+
 
  //Brands icons
 
@@ -26,7 +25,11 @@ function Main() {
           <Route path="/login" element={<VokeComponent/>} />
       </Routes>
      
+     <ProductForm onProductAdded={() => window.location.reload()}/>
+     
       <Footer />
+
+      
     </BrowserRouter>
 
     )

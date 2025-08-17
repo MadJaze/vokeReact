@@ -129,6 +129,7 @@ return (
     </div>
 
                 <p className='product_card_name'>{product.name}</p>
+                       
 
             <div className='product_card_price'>
                 
