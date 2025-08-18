@@ -10,6 +10,42 @@
   src: url('../fonts/GalanoGrotesqueMedium.otf') format('truetype');
 }
 
+
+/*UPdate menu */
+
+.overlaysub {
+
+width: 100%;
+height: 100vh;
+top: 0;
+left: 0;
+background-color: rgba(0,0,0, 0.5);
+z-index: 10;
+position: fixed;
+
+}
+
+.update-menu {
+  font-family: 'GalanoGrotesque';
+  top: 50%;          
+  left: 50%;  
+  width: 80%;       
+  transform: translate(-50%, -50%); 
+    background-color: white;
+    position: fixed;
+    z-index: 20;
+    padding: 20px;
+    box-shadow: 2px, 2px;
+}
+
+.update-menu h1 {
+
+
+
+    color: #1E40AF;
+}
+
+
 /* COntainer principal*/
 .cards-linksinfo{
 
@@ -52,12 +88,19 @@ transition:  0.4s ease;
 
 
 .edit-btn {
-    background-color: #007bff;
+   width: 20px;
+   background-color: white;
     color: white;
 }
 
+.heart_icon{
+
+margin: 0;
+}
+
 .delete-btn {
-   background-color: #dc3545;
+   width: 20px;
+   background-color: white;
    color:  white;
 }
 

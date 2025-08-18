@@ -43,7 +43,9 @@ const Header = () => {
 
           <input placeholder="Encontre o que precisa" className="search-field" />
           <div className="coracao-carrinho">
+              <Link to="/cadastraProduto">
             <FontAwesomeIcon icon={faHeart} />
+            </Link>
             <Link to="/login">
             <FontAwesomeIcon icon={faBars}  className='barras'/>
             </Link> 
@@ -99,7 +101,7 @@ const Header = () => {
         </div>
       </div>
 
-      
+      {/* MENU Search modo Tablet */} 
 
       {menuOpen && (
 <>

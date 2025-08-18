@@ -1,19 +1,6 @@
 {
   "products": [
     {
-      "id": "56",
-      "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-      "SKU": "P007838-B",
-      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwe2639483/smartphones-apple/iPhone%2013%201.jpg",
-      "originalPrice": 3799,
-      "color": "Midnight Black",
-      "condition": "Muito Bom",
-      "storageDevice": "128GB",
-      "inStock": 5,
-      "liquidaTech": true,
-      "brand": "apple"
-    },
-    {
       "id": "3",
       "name": "Samsung Galaxy A55 5G 128GB - Branco Azulado",
       "SKU": "P008744-B",
@@ -105,38 +92,131 @@
       "brand": "dell"
     },
     {
-      "id": "d4cd",
-      "name": "Gato",
-      "sku": "otroGato",
-      "image": "https://imgs.search.brave.com/ahe_rY6qHkk9Urx1EvPipcY86xkWKFlVWKWAYyPMd14/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hZG1p/bi5jbm5icmFzaWwu/Y29tLmJyL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9zaXRlcy8xMi8y/MDI1LzA1L2dhdG8t/bGFyYW5qYS1maWxo/b3RlLmpwZz93PTg0/OSZoPTQ3NyZjcm9w/PTA",
-      "originalPrice": 590,
-      "condition": "Bom",
+      "id": "19cb",
+      "name": "",
+      "sku": "",
+      "image": "",
+      "condition": "",
       "color": "",
-      "inStock": 14,
       "liquidaTech": false,
+      "brand": ""
+    },
+    {
+      "id": "3cce",
+      "name": "Samsung Galaxy A14 64GB - Prata",
+      "sku": "123454",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw429f77d3/smartphones-samsung/A14.jpg",
+      "originalPrice": 977.55,
+      "condition": "Muito Bom",
+      "color": "Prata",
+      "inStock": 60,
+      "liquidaTech": true,
+      "brand": "samsung"
+    },
+    {
+      "id": "f545",
+      "name": "Samsung Galaxy A50 128GB - Azul",
+      "sku": "155789",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwdabb7525/smartphones-samsung/GalaxyA50Azul%201.jpg",
+      "originalPrice": 2500,
+      "condition": "Muito Bom",
+      "color": "Azul",
+      "inStock": 34,
+      "liquidaTech": false,
+      "brand": "samsung"
+    },
+    {
+      "id": "062c",
+      "name": "Console Playstation 4 Slim - Dourado - SSD 480Gb + 1 Controle",
+      "sku": "203345-8",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw7a9155b9/images/PS4%20DOURADO.jpg",
+      "originalPrice": 1799,
+      "condition": "Bom",
+      "color": "Dourado",
+      "inStock": 1,
+      "liquidaTech": true,
+      "brand": "dell"
+    },
+    {
+      "id": "eae1",
+      "name": "Console Playstation 4 - Preto - Hdd 500Gb + 1 Controle",
+      "sku": "23456",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw6723d62d/images/PS4%20PRETO.jpg",
+      "originalPrice": 1.63305,
+      "condition": "Bom",
+      "color": "Preto",
+      "inStock": 3,
+      "liquidaTech": true,
+      "brand": "dell"
+    },
+    {
+      "id": "f29f",
+      "name": "Notebook Dell Latitude 3410 Core i5 10ªGen SSD 256GB 8GB Win 11 Pro",
+      "sku": "P007195-B",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw202f3bc5/notebooks-dell/Latitude%203410%201.jpg",
+      "originalPrice": 2.75405,
+      "condition": "Muito Bom",
+      "color": "Preto",
+      "inStock": 23,
+      "liquidaTech": false,
+      "brand": "dell"
+    },
+    {
+      "id": "0d83",
+      "name": "Apple MacBook Pro A2141 Core i7 9ªGen SSD 512GB 16GB - Cinza Espacial",
+      "sku": "344",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwf9bcbfc7/notebooks-apple/A2141%201%20-%204.jpg",
+      "originalPrice": 6.45905,
+      "condition": "Muito Bom",
+      "color": "Preto",
+      "inStock": 12,
+      "liquidaTech": false,
+      "brand": "apple"
+    },
+    {
+      "id": "d45a",
+      "name": "Apple iPad 8 A2429 32GB - Cinza Espacial",
+      "sku": "233",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw185bd8a1/tablet-apple/iPad%20A2429%201.jpg",
+      "originalPrice": 2000,
+      "condition": "Muito Bom",
+      "color": "Preto",
+      "inStock": 23,
+      "liquidaTech": true,
+      "brand": "apple"
+    },
+    {
+      "id": "75bd",
+      "name": "Samsung Galaxy A55 5G 128GB - Branco Azulado",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw0aa8510c/smartphones-samsung/Galaxy%20A55%20Branco%201.jpg",
+      "originalPrice": 1899.05,
+      "condition": "legal",
+      "color": "Branco Azulado",
+      "inStock": 5,
+      "liquidaTech": true,
       "brand": "samsung"
     }
   ],
   "users": [
     {
       "id": "1",
-      "name": "Samsung iPhone 23 8G 528TB - Dinossaur",
-      "SKU": "P007838-B"
+      "name": "Jasiel",
+      "password": "P007838-B"
     },
     {
       "id": "56",
-      "name": "Apple iPhone 13 5G 128GB - Meia-Noite",
-      "SKU": "P007838-B"
+      "name": "Oriana",
+      "password": "P007838-B"
     },
     {
       "id": "3",
       "name": "Samsung Galaxy A55 5G 128GB - Branco Azulado",
-      "SKU": "P008744-B"
+      "password": "P008744-B"
     },
     {
       "id": "4",
       "name": "Samsung Galaxy Tab Active 2 SM-T395 16GB 3GB Preto",
-      "SKU": "P004837-B"
+      "password": "P004837-B"
     }
   ]
 }

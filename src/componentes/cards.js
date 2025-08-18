@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProducts, deleteProduct } from "./api";
+import { getProducts, deleteProduct, addProduct, getUsers} from "./api";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faPenToSquare } from '@fortawesome/free-regular-svg-icons';
-import Modal from 'react-modal';
+import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
 import './cards.css'
 
 
@@ -12,6 +12,19 @@ export default function Cards() {
 // 1. Obter do JSON os produtos da loja usando useState 
 
 const [products, setProducts] = useState([]);
+const [users, setUsers] = useState([]);
+const [updateMenu, setUpdateMenu] = useState(false); //Menu pra atualizar o nosso produto.
+const [productToEdit, setProductToEdit] = useState(null); // Pegar o ID que estaremos clicando 
+
+const [name, setName] = useState("");
+const [sku, setSku ] = useState("");
+const [ image, setImage ] = useState("");
+const [originalPrice, setOriginalPrice] = useState();
+const [ color , setColor ] = useState("");
+const [condition, setCondition] = useState("");
+const [ inStock, setInStock ] = useState();
+const [ liquidaTech, setLiquidaTech ] = useState(false);
+const [ brands, setBrands ] = useState("");
 
 
 //Filtro por marca (brand) Esse hook aqui accede dinamicamente aos parámetros do db.json (maravilha)
@@ -25,16 +38,20 @@ const { brand } = useParams();
 const fetchProducts = async () => {
 
     const res = await getProducts(brand); //Extrair os produtos do JSON e uma vez feito...
+    const resUsers = await getUsers()
     console.log("respuesta", res.data);
     setProducts(res.data);
+    setUsers(resUsers.data)
 }
+
+
 
 // 3. Implementalção do useEffect
 
 
 useEffect (() => {
 
-fetchProducts()
+fetchProducts();
 
 
 }, [brand])
@@ -50,13 +67,20 @@ fetchProducts()
 };
 
 
+const handleSubmit = async (e) => {
 
-////////////////////////////MODALS////////////////////////////////
+  alert("Produto adicionado com sucesso")
+e.preventDefault();
+const newProduct = { name, sku, image, originalPrice, condition, color, inStock, liquidaTech, brand : brands };
+await addProduct(newProduct);
+ 
+
+setName(""); setSku(""); setImage(""); setOriginalPrice(); setCondition("");
+setColor(""); setInStock(); setLiquidaTech(false); setBrands("");
 
 
 
-
-
+}
 
 
 
@@ -65,7 +89,7 @@ fetchProducts()
 
 return (
 
-
+<>
 <div className="cards-container">
  
     <div className="ordenador">
@@ -110,9 +134,27 @@ return (
                 
                 <div class="product-actions">
 
-                           <button class="edit-btn"> <FontAwesomeIcon icon={faPenToSquare} onClick={ () => handleDelete(product.id) } className='heart_icon' /></button>
- 
-                             <button class="delete-btn" onClick={ () => handleDelete(product.id) }>Deletar</button>
+
+                            {/*Crud edição de produtos*/}
+
+                           <button className="edit-btn"> <FontAwesomeIcon icon={faPenToSquare} 
+                           onClick={ () => { 
+                           setUpdateMenu(true); //Abre menú edição 
+                           setProductToEdit(product); //Pega ID do produto 
+
+                            setName(product.name);
+                            setSku(product.sku);
+                            setImage(product.image);
+                            setOriginalPrice(product.originalPrice);
+                            setCondition(product.condition);
+                             setColor(product.color);
+                            setInStock(product.inStock);
+                              setLiquidaTech(product.liquidaTech);
+                             setBrands(product.brand);
+
+                           }} className='heart_icon' /></button>
+                                                                                                
+                             <button className="delete-btn" onClick={ () => handleDelete(product.id)} ><FontAwesomeIcon icon={faTrashCan} className='heart_icon' /></button>
 
                              </div>
                 </div>
@@ -163,9 +205,107 @@ return (
 
 
 
+
+
+
+
+
 </div>
 
 </div>
+
+<div className='menu_update_container'>
+
+{updateMenu && productToEdit && (
+
+<>
+
+<div className='overlaysub' onClick={() => setUpdateMenu(false)} 
+    
+    ></div>
+
+
+
+<div className='update-menu'>
+
+<h1> Atualizar {productToEdit.name}</h1>
+
+
+    <form onSubmit={handleSubmit}>
+
+    <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome do Produto"/>
+    <input value={sku} onChange={(e) => setSku(e.target.value)} placeholder="SKU do Produto"/> 
+    <input value={image}  onChange= {(e) => setImage(e.target.value)} placeholder="Imagem do Produto (link)"/ >
+    <input value={originalPrice} onChange ={(e) => setOriginalPrice(Number(e.target.value))} placeholder="Preço original do Produto" />
+    <input value={condition} onChange={(e) => setCondition(e.target.value)} placeholder="Condição do Produto"/>
+    <input value = {inStock} onChange={(e) => setInStock(Number(e.target.value))} placeholder="Quantidade do Produto"/>
+    <label>
+      LiquidaTech?
+    <input type="checkbox" value ={liquidaTech} onChange={(e) => setLiquidaTech(e.target.checked)} placeholder="LiquidaTech?" />
+    </label>
+    <fieldset>
+    <legend>Marca</legend>
+    <label>
+      <input 
+        type="radio" 
+        name="brand" 
+        value="apple" 
+        checked={brands === "apple"} 
+        onChange={(e) => setBrands(e.target.value)} 
+      /> Apple
+    </label>
+    <label>
+      <input 
+        type="radio" 
+        name="brand" 
+        value="samsung" 
+        checked={brands === "samsung"} 
+        onChange={(e) => setBrands(e.target.value)} 
+      /> Samsung
+    </label>
+    <label>
+      <input 
+        type="radio" 
+        name="brand" 
+        value="lenovo" 
+        checked={brands === "lenovo"} 
+        onChange={(e) => setBrands(e.target.value)} 
+      /> Lenovo
+    </label>
+    <label>
+      <input 
+        type="radio" 
+        name="brand" 
+        value="dell" 
+        checked={brands === "dell"} 
+        onChange={(e) => setBrands(e.target.value)} 
+      /> Dell
+    </label>
+  </fieldset>
+
+      <button type="submit">Agregar Produto</button>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+</>
+
+
+)}
+
+
+</div>
+
+
+</>
 
 )
 

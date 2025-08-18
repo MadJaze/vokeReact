@@ -3,7 +3,7 @@ import axios from "axios";
 
 const API_URL = "http://localhost:3000"
 
-
+//Get products from API
 
 export const getProducts = (brand) => { 
     
@@ -15,12 +15,21 @@ export const getProducts = (brand) => {
 
 }
 
-export const addProduct = (product) => axios.post(`${API_URL}/products`, product);
+export const getUsers = () => { 
+    
+    const url = `${API_URL}/users`
+   return axios.get(url);
+
+
+}
 
 
 // isso aqui para fazer reposição post, para executar, precisamos de um componente para isso.
 
+export const addProduct = (product) => axios.post(`${API_URL}/products`, product);
 
+
+//Delete product from API
 
 export const deleteProduct = async (id) => {
 

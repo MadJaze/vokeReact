@@ -17,12 +17,13 @@ const [ brand, setBrand ] = useState("");
 
 const handleSubmit = async (e) => {
 
+  alert("Produto adicionado com sucesso")
 e.preventDefault();
 const newProduct = { name, sku, image, originalPrice, condition, color, inStock, liquidaTech, brand  };
 await addProduct(newProduct);
 onProductAdded() //Isso aqui vai ser igual ao fetch products  
 
-setName(""); setSku(""); setImage(""); setOriginalPrice(0); setCondition("");
+setName(""); setSku(""); setImage(""); setOriginalPrice(); setCondition("");
 setColor(""); setInStock(); setLiquidaTech(false); setBrand("");
 
 
