@@ -29,6 +29,11 @@ export const getUsers = () => {
 export const addProduct = (product) => axios.post(`${API_URL}/products`, product);
 
 
+//precisamos do corpo do produto:
+
+
+export const updateProduct = (id, corpo) => axios.put(`${API_URL}/products/${id}`, corpo);
+
 //Delete product from API
 
 export const deleteProduct = async (id) => {

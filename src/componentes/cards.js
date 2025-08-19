@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProducts, deleteProduct, addProduct, getUsers} from "./api";
+import { getProducts, deleteProduct, addProduct, getUsers, updateProduct} from "./api";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faPenToSquare } from '@fortawesome/free-regular-svg-icons';
 import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
@@ -84,6 +84,35 @@ setColor(""); setInStock(); setLiquidaTech(false); setBrands("");
 
 
 
+const handleUpdate = async (e) => {
+
+  e.preventDefault();
+  const updatedProduct = { 
+    
+    ...productToEdit,
+    name, sku, image, originalPrice, condition, color, inStock, liquidaTech, brand : brands };
+
+    alert(`ID: ${productToEdit.id}\nProducto actualizado: ${JSON.stringify(updatedProduct)}`);
+
+    
+     try{
+    await updateProduct(productToEdit.id, updatedProduct);
+
+  setUpdateMenu(false); 
+  fetchProducts(); 
+ 
+
+
+} catch(error){
+
+  console.error("Erro ao atualizar, produto", error);
+
+}
+
+}
+
+
+
 ////////////////////END
 
 
@@ -109,6 +138,8 @@ return (
 
         </select>
         </div>
+
+        
 
 <div className="cards-linksinfo">
 
@@ -231,7 +262,7 @@ return (
 <h1> Atualizar {productToEdit.name}</h1>
 
 
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleUpdate}>
 
     <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome do Produto"/>
     <input value={sku} onChange={(e) => setSku(e.target.value)} placeholder="SKU do Produto"/> 

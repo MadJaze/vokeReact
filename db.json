@@ -7,7 +7,7 @@
       "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw0aa8510c/smartphones-samsung/Galaxy%20A55%20Branco%201.jpg",
       "originalPrice": 1899.05,
       "color": "Branco Azulado",
-      "condition": "Muito Bom",
+      "condition": "Legal",
       "storageDevice": "128GB",
       "inStock": 5,
       "liquidaTech": true,
@@ -138,18 +138,6 @@
       "brand": "dell"
     },
     {
-      "id": "eae1",
-      "name": "Console Playstation 4 - Preto - Hdd 500Gb + 1 Controle",
-      "sku": "23456",
-      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw6723d62d/images/PS4%20PRETO.jpg",
-      "originalPrice": 1.63305,
-      "condition": "Bom",
-      "color": "Preto",
-      "inStock": 3,
-      "liquidaTech": true,
-      "brand": "dell"
-    },
-    {
       "id": "f29f",
       "name": "Notebook Dell Latitude 3410 Core i5 10ªGen SSD 256GB 8GB Win 11 Pro",
       "sku": "P007195-B",
@@ -195,6 +183,18 @@
       "inStock": 5,
       "liquidaTech": true,
       "brand": "samsung"
+    },
+    {
+      "id": "1682",
+      "name": "fdjskfsjkdfnsdk",
+      "sku": "sdasdfdfasdas",
+      "image": "https://imgs.search.brave.com/99R8zmTbUt6lo_FZzAZ-P_mGXfw8lUeTQWusZVwBTAw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTIz/NzA0ODY4L3Bob3Rv/L2Rpbm9zYXVyLXNr/dWxsLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz11QXd3eGxF/dFJKcUtMdmNra0tj/b0cwRHFCRThNUXNZ/bVVsYWdrZEx0bDNN/PQ",
+      "originalPrice": 2000,
+      "condition": "Muito Bom",
+      "color": "preto",
+      "inStock": 23,
+      "liquidaTech": true,
+      "brand": "lenovo"
     }
   ],
   "users": [
