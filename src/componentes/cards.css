@@ -29,20 +29,43 @@ position: fixed;
   font-family: 'GalanoGrotesque';
   top: 50%;          
   left: 50%;  
-  width: 80%;       
+  width: fit-content;       
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+  text-align: center;
   transform: translate(-50%, -50%); 
     background-color: white;
     position: fixed;
     z-index: 20;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 2px, 2px;
 }
 
-.update-menu h1 {
+.update-menu h4 {
 
 
 
     color: #1E40AF;
+}
+
+
+.input_update {
+
+    padding: 10px;
+    width: 80%; 
+    margin:  5px 0;
+
+
+
+}
+
+.button_update {
+
+
+background-color: #1E40AF;
+color: white;
+padding: 20px;
+margin: 10px;
+
 }
 
 
@@ -323,6 +346,11 @@ margin: 0;
 
     margin: auto;
     width: 90%;
+}
+
+.update-menu {
+
+     width: 85%; 
 }
 
 }

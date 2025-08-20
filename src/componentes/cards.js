@@ -67,7 +67,7 @@ fetchProducts();
 };
 
 
-const handleSubmit = async (e) => {
+/*const handleSubmit = async (e) => {
 
   alert("Produto adicionado com sucesso")
 e.preventDefault();
@@ -80,7 +80,7 @@ setColor(""); setInStock(); setLiquidaTech(false); setBrands("");
 
 
 
-}
+}*/
 
 
 
@@ -259,17 +259,18 @@ return (
 
 <div className='update-menu'>
 
-<h1> Atualizar {productToEdit.name}</h1>
+<h4> Atualizar {productToEdit.name}</h4>
 
 
     <form onSubmit={handleUpdate}>
 
-    <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome do Produto"/>
-    <input value={sku} onChange={(e) => setSku(e.target.value)} placeholder="SKU do Produto"/> 
-    <input value={image}  onChange= {(e) => setImage(e.target.value)} placeholder="Imagem do Produto (link)"/ >
-    <input value={originalPrice} onChange ={(e) => setOriginalPrice(Number(e.target.value))} placeholder="Preço original do Produto" />
-    <input value={condition} onChange={(e) => setCondition(e.target.value)} placeholder="Condição do Produto"/>
-    <input value = {inStock} onChange={(e) => setInStock(Number(e.target.value))} placeholder="Quantidade do Produto"/>
+    <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome do Produto" className='input_update'/>
+    <input value={sku} onChange={(e) => setSku(e.target.value)} placeholder="SKU do Produto" className='input_update'/> 
+    <input value={image}  onChange= {(e) => setImage(e.target.value)} placeholder="Imagem do Produto (link)" className='input_update'/ >
+    <input value={originalPrice} onChange ={(e) => setOriginalPrice(Number(e.target.value))} placeholder="Preço original do Produto" className='input_update'/>
+    <input value={condition} onChange={(e) => setCondition(e.target.value)} placeholder="Condição do Produto" className='input_update'/>
+    <input value = {inStock} onChange={(e) => setInStock(Number(e.target.value))} placeholder="Quantidade do Produto" className='input_update'/>
+    <br></br>
     <label>
       LiquidaTech?
     <input type="checkbox" value ={liquidaTech} onChange={(e) => setLiquidaTech(e.target.checked)} placeholder="LiquidaTech?" />
@@ -314,7 +315,8 @@ return (
     </label>
   </fieldset>
 
-      <button type="submit">Agregar Produto</button>
+      <button type="submit" className='button_update'>Atualizar Produto</button>
+       <button  className='button_update' onClick={() => setUpdateMenu(false)}>Cancelar</button>
     </form>
 
 </div>
