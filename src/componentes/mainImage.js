@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom';
 function MainImage() {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 480)
-    const { brand } = useParams();
+    const { brand } = useParams(); //Trazer parámetro do db.json (important)
 
    
 
@@ -53,7 +53,7 @@ function MainImage() {
     imagemMobile: "https://www.voke.shop/dw/image/v2/BKXD_PRD/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw93c52be0/Liquida%20Tech%20[Mobile]@2x.png"
   };
 
-      const data = brand? brandData[brand?.toLowerCase()] : liquidaTech;
+      const data = brand? brandData[brand] : liquidaTech;
      
   
     const simbolo = ">"; //Não posso colocar o símbolo maior que diretamente no JSX, então uso uma variável

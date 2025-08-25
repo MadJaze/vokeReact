@@ -1,6 +1,6 @@
 import { useState } from "react";
 import  { addProduct } from './api.js'
-import { width } from "@fortawesome/free-brands-svg-icons/fa11ty";
+
 
 export default function ProductForm2( { onProductAdded } ) {
   

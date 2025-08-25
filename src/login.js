@@ -1,71 +1,92 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import {addUser, getUsers} from './componentes/api';
+import { width } from '@fortawesome/free-brands-svg-icons/fa11ty';
+import { faPoundSign } from '@fortawesome/free-solid-svg-icons';
 
-export default function VokeComponent() {
-  const [loginData, setLoginData] = useState({
-    email: '',
-    password: ''
-  });
 
-  const [trackingData, setTrackingData] = useState({
-    orderNumber: '',
-    orderEmail: '',
-    cep: ''
-  });
+export default function VokeComponent({login, setLogin}) {
+ 
+const [name, setName] = useState("");
+const [password, setPassword ] = useState("");
 
-  const handleLoginChange = (e) => {
-    setLoginData({
-      ...loginData,
-      [e.target.name]: e.target.value
-    });
-  };
 
-  const handleTrackingChange = (e) => {
-    setTrackingData({
-      ...trackingData,
-      [e.target.name]: e.target.value
-    });
-  };
+const [users, setUsers] = useState([]);
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    console.log('Login:', loginData);
-  };
+const handleSubmit = async (e) => {
 
-  const handleTracking = (e) => {
-    e.preventDefault();
-    console.log('Rastreamento:', trackingData);
-  };
+  alert("Usuario adicionado com sucesso")
+e.preventDefault();
+const newUser = { name, password };
+await addUser(newUser);
+setName(""); setPassword(""); 
 
-  const handleForgotPassword = () => {
-    console.log('Esqueci minha senha');
-  };
 
-  const handleSignUp = () => {
-    console.log('Cadastre-se');
-  };
+
+}
+const fetchUsers = async () => {
+
+
+ const res = await getUsers(); //Extrair os users do JSON ...
+   
+    console.log("users:", res.data);
+    setUsers(res.data);
+
+    
+
+}
+
+useEffect (() => {
+
+fetchUsers();
+
+}, [])
+
+   
+
+const enterSystem = () => {
+
+const userExists = users.find(
+  (user) => user.name === name && user.password === password);
+
+
+if (userExists) {
+  alert(`Bem-vindo ao sistema, ${name}!`);
+    setLogin(!login);
+} else {
+  alert("Nome ou senha incorretos. Tente novamente.");}
+
+}
+
+  // Media queries usando JavaScript
+  const isTablet = window.innerWidth <= 1024;
+  const isMobile = window.innerWidth <= 768;
+  const isSmallMobile = window.innerWidth <= 480;
 
   const styles = {
     container: {
       minHeight: '100vh',
-      backgroundColor: '#f3f4f6'
+      backgroundColor: '#f3f4f6',
+   
+    
+    
+   
     },
-    header: {
-      backgroundColor: '#ec4899',
-      color: 'white',
-      padding: '1rem'
-    },
+  
     headerTitle: {
+     
       fontSize: '1.5rem',
       fontWeight: 'bold',
       margin: '0'
     },
     mainContent: {
+      
       maxWidth: '1152px',
       margin: '0 auto',
       padding: '1.5rem'
     },
     contentWrapper: {
       display: 'flex',
+      
       gap: '2rem',
       maxWidth: '1152px',
       margin: '0 auto'
@@ -74,8 +95,10 @@ export default function VokeComponent() {
       flex: '1',
       backgroundColor: 'white',
       borderRadius: '0.5rem',
+       height: 'fit-content',
+      width: 'fit-content',
       boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-      padding: '1.5rem'
+      padding: '2.5rem'
     },
     cardTitle: {
       fontSize: '1.25rem',
@@ -101,8 +124,8 @@ export default function VokeComponent() {
       marginBottom: '0.25rem'
     },
     input: {
-      width: '100%',
-      padding: '0.5rem 0.75rem',
+      width: '98%',
+      padding: '0.5rem 0.25rem',
       border: '1px solid #d1d5db',
       borderRadius: '0.375rem',
       fontSize: '1rem',
@@ -165,15 +188,15 @@ export default function VokeComponent() {
     }
   };
 
-  // Media queries usando JavaScript
-  const isTablet = window.innerWidth <= 1024;
-  const isMobile = window.innerWidth <= 768;
-  const isSmallMobile = window.innerWidth <= 480;
+
 
   const responsiveStyles = {
+
+    
     contentWrapper: {
       ...styles.contentWrapper,
-      flexDirection: isTablet ? 'column' : 'row'
+      flexDirection: isTablet ? 'column' : 'row',
+    
     },
     mainContent: {
       ...styles.mainContent,
@@ -181,6 +204,7 @@ export default function VokeComponent() {
     },
     card: {
       ...styles.card,
+        width: isTablet? '89%': 'fit-content',
       padding: isMobile ? '1rem' : '1.5rem'
     },
     header: {
@@ -196,26 +220,32 @@ export default function VokeComponent() {
   return (
     <div style={styles.container}>
       {/* Header */}
-      <div style={responsiveStyles.header}>
-        <h1 style={responsiveStyles.headerTitle}>voke</h1>
-      </div>
+     
 
       {/* Main Content */}
+
+  <div style={styles.createAccount}>
+              <h3 style={styles.createAccountTitle}>Sistema Bloqueado</h3>
+              <p style={styles.createAccountText}>Cadastre seu nome e senha para iniciar...</p>
+          
+            </div>
+
       <div style={responsiveStyles.mainContent}>
         <div style={responsiveStyles.contentWrapper}>
           
+          <form  style={responsiveStyles.card} onSubmit={enterSystem}>
           {/* Login Section */}
-          <div style={responsiveStyles.card}>
+         
             <h2 style={styles.cardTitle}>Login</h2>
             
             <div style={styles.form}>
               <div style={styles.formGroup}>
-                <label style={styles.label}>Email *</label>
+                <label style={styles.label}>Nome *</label>
                 <input
-                  type="email"
-                  name="email"
-                  value={loginData.email}
-                  onChange={handleLoginChange}
+                
+                         value={name}
+                onChange={(e) => setName(e.target.value)}
+                  
                   required
                   style={styles.input}
                 />
@@ -224,99 +254,72 @@ export default function VokeComponent() {
               <div style={styles.formGroup}>
                 <label style={styles.label}>Senha *</label>
                 <input
-                  type="password"
-                  name="password"
-                  value={loginData.password}
-                  onChange={handleLoginChange}
+                        value={password}
+            onChange={(e) => setPassword(e.target.value)}
+                
                   required
                   style={styles.input}
                 />
               </div>
 
               <button
-                onClick={handleLogin}
+               
                 style={{...styles.button, ...styles.buttonPrimary}}
               >
                 Entrar
               </button>
             </div>
 
-            <div style={styles.forgotPassword}>
-              <button
-                onClick={handleForgotPassword}
-                style={styles.link}
-              >
-                Esqueci minha senha
-              </button>
-            </div>
+            
 
-            <div style={styles.divider}>
-              <span style={styles.dividerText}>OU</span>
-            </div>
+          
 
             {/* Create Account Section */}
-            <div style={styles.createAccount}>
-              <h3 style={styles.createAccountTitle}>Crie uma conta</h3>
-              <p style={styles.createAccountText}>Ainda não tem conta na Voke?</p>
-              <button
-                onClick={handleSignUp}
-                style={{...styles.button, ...styles.buttonSuccess}}
-              >
-                Cadastre-se
-              </button>
-            </div>
-          </div>
+          
+        
+
+          </form>
 
           {/* Order Tracking Section */}
-          <div style={responsiveStyles.card}>
-            <h2 style={styles.cardTitle}>Conferir o seu pedido</h2>
+
+          <form style={responsiveStyles.card}  onSubmit={handleSubmit}>
+          
+            <h2 style={styles.cardTitle}>Cadastre seu User</h2>
             
             <div style={styles.form}>
               <div style={styles.formGroup}>
-                <label style={styles.label}>Número do Pedido *</label>
+                <label style={styles.label}>Nome *</label>
                 <input
-                  type="text"
-                  name="orderNumber"
-                  value={trackingData.orderNumber}
-                  onChange={handleTrackingChange}
+                 value={name} onChange={(e) => setName(e.target.value)}
+               
+                 
                   required
                   style={styles.input}
                 />
               </div>
 
               <div style={styles.formGroup}>
-                <label style={styles.label}>Email do Pedido *</label>
+                <label style={styles.label}>Senha *</label>
                 <input
-                  type="email"
-                  name="orderEmail"
-                  value={trackingData.orderEmail}
-                  onChange={handleTrackingChange}
+                 value={password} onChange={(e) => setPassword(e.target.value)}
+                 
+                 
                   required
                   style={styles.input}
                 />
               </div>
 
-              <div style={styles.formGroup}>
-                <label style={styles.label}>CEP para cobrança *</label>
-                <input
-                  type="text"
-                  name="cep"
-                  value={trackingData.cep}
-                  onChange={handleTrackingChange}
-                  required
-                  placeholder="00000-000"
-                  style={styles.input}
-                />
-              </div>
 
               <button
-                onClick={handleTracking}
+             
                 style={{...styles.button, ...styles.buttonPrimary}}
               >
-                Consultar o código de rastreio
+                Cadastrar
               </button>
             </div>
-          </div>
+         
+          </form>
+
         </div>
       </div>
     </div>

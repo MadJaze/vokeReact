@@ -2,14 +2,38 @@ import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; //Iconos, biblioteca em geral
 import { faLinkedin, faSquareFacebook, faSquareYoutube } from '@fortawesome/free-brands-svg-icons'; //Brands icons
 import img from '../recursos/reclame_aqui1.png';
+import {useState} from 'react'
 import img2 from '../recursos/reclame_aqui2.png';
+import VokeComponent from '../login';
 
 const Footer = () => {
+
+const [login, setLogin] = useState(true);
+
 
 return (
 
 <footer>
 
+ {login && (<div className='login-menu-required'  >
+
+<div className='login-logo'>
+ <img 
+            className="imagem-logo"
+            src="https://www.voke.shop/on/demandware.static/Sites-Voke-Site/-/default/dwf3e412cb/images/voke-logo-255.png"
+            alt="logo"
+          />
+
+</div>
+
+<div className="barra-rosa">
+
+</div>
+
+<VokeComponent login={login} setLogin={setLogin}/>
+
+
+  </div> )}
 
         <div id="footer-container-main">
 

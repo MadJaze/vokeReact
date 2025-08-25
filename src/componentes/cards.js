@@ -12,7 +12,7 @@ export default function Cards() {
 // 1. Obter do JSON os produtos da loja usando useState 
 
 const [products, setProducts] = useState([]);
-const [users, setUsers] = useState([]);
+
 const [updateMenu, setUpdateMenu] = useState(false); //Menu pra atualizar o nosso produto.
 const [productToEdit, setProductToEdit] = useState(null); // Pegar o ID que estaremos clicando 
 
@@ -38,10 +38,10 @@ const { brand } = useParams();
 const fetchProducts = async () => {
 
     const res = await getProducts(brand); //Extrair os produtos do JSON e uma vez feito...
-    const resUsers = await getUsers()
+   
     console.log("respuesta", res.data);
     setProducts(res.data);
-    setUsers(resUsers.data)
+    
 }
 
 

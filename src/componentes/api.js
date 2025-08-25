@@ -28,6 +28,7 @@ export const getUsers = () => {
 
 export const addProduct = (product) => axios.post(`${API_URL}/products`, product);
 
+export const addUser = (user) => axios.post(`${API_URL}/users`, user);
 
 //precisamos do corpo do produto:
 
