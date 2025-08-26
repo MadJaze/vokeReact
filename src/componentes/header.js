@@ -2,18 +2,28 @@ import '../App.css';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser, faHeart } from '@fortawesome/free-regular-svg-icons';
-import { faChevronRight, faChevronLeft, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faChevronLeft, faBars, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'; 
+import { useContext } from 'react';
+import { ThemeContext } from './themeContext.js';
 
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
 
 
   return (
-    <header>
+
+
+    <header  
+    
+    style = {{ backgroundColor: isDarkMode ? '#121212' : '#fff',
+      color: isDarkMode ? "#fff" : "#000",
+      }}
+    
+    >
       <div className="ev-topBanner">
         <button className="header-slider">
           <FontAwesomeIcon icon={faChevronLeft} className="icon-slider" />
@@ -31,7 +41,12 @@ const Header = () => {
       </div>
 
       <div className="ev-header__columns">
-        <div className="container">
+        <div className="container" 
+        
+         style = {{ backgroundColor: isDarkMode ? '#121212' : '#fff',
+      color: isDarkMode ? "#fff" : "#000",
+      }}
+        >
           <button onClick={() => setMenuOpen(true)} className='barras-tablet-mode'>
           <FontAwesomeIcon icon={faBars}  className='barras-tablet-mode'/>
           </button>
@@ -49,11 +64,7 @@ const Header = () => {
             <Link to="/login">
             <FontAwesomeIcon icon={faBars}  className='barras'/>
             </Link> 
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1124/1124199.png"
-              width="20"
-              alt="carrinho"
-            />
+            <FontAwesomeIcon icon={faMoon}  className='nocturne-mode' onClick={toggleTheme}/>
           </div>
         </div>
       </div>

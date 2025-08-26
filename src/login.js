@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
 import {addUser, getUsers} from './componentes/api';
-import { width } from '@fortawesome/free-brands-svg-icons/fa11ty';
-import { faPoundSign } from '@fortawesome/free-solid-svg-icons';
+
 
 
 export default function VokeComponent({login, setLogin}) {
  
-const [name, setName] = useState("");
-const [password, setPassword ] = useState("");
+const [name, setName] = useState(""); //name do user
+const [password, setPassword ] = useState(""); //password do user
 
 
-const [users, setUsers] = useState([]);
+const [users, setUsers] = useState([]); //para obter os usuarios do json-server
 
 const handleSubmit = async (e) => {
 
@@ -18,11 +17,12 @@ const handleSubmit = async (e) => {
 e.preventDefault();
 const newUser = { name, password };
 await addUser(newUser);
+fetchUsers();
 setName(""); setPassword(""); 
 
-
-
 }
+
+
 const fetchUsers = async () => {
 
 

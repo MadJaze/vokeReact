@@ -3,10 +3,9 @@ import Footer from './componentes/footer.js';
 import Header from './componentes/header.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 import VokeComponent from './login.js';
-
 import MainImage from './componentes/mainImage.js';
 import ProductForm2 from './componentes/postProduct.js'
-
+import { ThemeProvider } from './componentes/themeContext.js';
 
  //Brands icons
 
@@ -15,6 +14,8 @@ function Main() {
 
   
     return(
+
+      <ThemeProvider> 
       <BrowserRouter>
       <Header />
       <Routes>
@@ -33,7 +34,7 @@ function Main() {
 
       
     </BrowserRouter>
-
+</ThemeProvider>
     )
       
 

@@ -28,7 +28,7 @@
     },
     {
       "id": "6",
-      "name": "Telefone bonito",
+      "name": "Gaviotas falando de negocios",
       "SKU": "P007838-B",
       "image": "https://imgs.search.brave.com/ZTApMISWZ65jZp1QAyQAiHhUNMpP9DPNAmfVypa5Crs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTMv/NDE4LzA3MC9zbWFs/bC93aGl0ZS1zZWFn/dWxscy1vcHBvc2l0/ZS1zZWEtcGhvdG8u/anBn",
       "originalPrice": 3799,
@@ -93,13 +93,15 @@
     },
     {
       "id": "19cb",
-      "name": "",
-      "sku": "",
-      "image": "",
-      "condition": "",
+      "name": "Mulher com frutas nos olhos...",
+      "sku": "Não te importa",
+      "image": "https://imgs.search.brave.com/sy5Mxq7oJlMmY43wafPG6rQ-x3hKvUXlt4tH-jEX5Lw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9yZXRy/YXRvLWNoaXN0b3Nv/LWRlLXVuYS1tdWpl/ci1qb3Zlbi0yNTIw/NzMzNi5qcGc",
+      "condition": "Saudável",
       "color": "",
-      "liquidaTech": false,
-      "brand": ""
+      "liquidaTech": true,
+      "brand": "lenovo",
+      "originalPrice": 3200,
+      "inStock": 3
     },
     {
       "id": "3cce",
@@ -186,15 +188,63 @@
     },
     {
       "id": "1682",
-      "name": "fdjskfsjkdfnsdk",
+      "name": "Dinossaur: Fossile Adventure 1",
       "sku": "sdasdfdfasdas",
       "image": "https://imgs.search.brave.com/99R8zmTbUt6lo_FZzAZ-P_mGXfw8lUeTQWusZVwBTAw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTIz/NzA0ODY4L3Bob3Rv/L2Rpbm9zYXVyLXNr/dWxsLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz11QXd3eGxF/dFJKcUtMdmNra0tj/b0cwRHFCRThNUXNZ/bVVsYWdrZEx0bDNN/PQ",
       "originalPrice": 2000,
-      "condition": "Muito Bom",
+      "condition": "Fossilizado",
       "color": "preto",
       "inStock": 23,
       "liquidaTech": true,
       "brand": "lenovo"
+    },
+    {
+      "id": "ae93",
+      "name": "Apple iPad 8 A2429 32GB - Cinza Espacial",
+      "sku": "",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw1fd4a1b2/smartphones-apple/iPhone%2011%20256%20Preto%201.jpg",
+      "originalPrice": 2345,
+      "condition": "Bom",
+      "color": "Verde",
+      "inStock": 1,
+      "liquidaTech": true,
+      "brand": "apple"
+    },
+    {
+      "id": "0d15",
+      "name": "Tábuas de madeira",
+      "sku": "sddds",
+      "image": "https://imgs.search.brave.com/kL703nhECMPF1LvOTZFD7T0K4sXctqFBIz-JtVjnk9A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTkv/MDMyLzMxNC9zbWFs/bC9zdGFjay1vZi1l/bXB0eS1yZWN0YW5n/dWxhci13b29kZW4t/b2xkLWtpdGNoZW4t/Y3V0dGluZy1ib2Fy/ZHMtd2hpdGUtYmFj/a2dyb3VuZC1waG90/by5qcGc",
+      "originalPrice": 1240,
+      "condition": "Madeira de qualidade",
+      "color": "Madeirado",
+      "inStock": 2,
+      "liquidaTech": false,
+      "brand": "lenovo"
+    },
+    {
+      "id": "769e",
+      "name": "Notebook Dell Latitude 3420 Core I5 11ªGen SSD 256GB 16GB Win 10 Pro",
+      "sku": "lol",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dwe0031900/notebooks-dell/Latitude%203420%203.jpg",
+      "originalPrice": 2.342,
+      "condition": "Muito Bom",
+      "color": "Preto",
+      "inStock": 34,
+      "liquidaTech": false,
+      "brand": "dell"
+    },
+    {
+      "id": "a547",
+      "name": "Samsung Galaxy A12 64GB - Vermelho",
+      "sku": "pow",
+      "image": "https://www.voke.shop/on/demandware.static/-/Sites-storefront-voke/default/dw607d1818/smartphones-samsung/Galaxy%20A12%20Vermelho%201.jpg",
+      "originalPrice": 809,
+      "condition": "Muito Bom",
+      "color": "vermelho",
+      "inStock": 23,
+      "liquidaTech": true,
+      "brand": "samsung"
     }
   ],
   "users": [
@@ -206,7 +256,7 @@
     {
       "id": "56",
       "name": "Oriana",
-      "password": "P007838-B"
+      "password": "P007999-B"
     },
     {
       "id": "3",
@@ -217,11 +267,6 @@
       "id": "4",
       "name": "Alexandra",
       "password": "P004837-B"
-    },
-    {
-      "id": "d5f8",
-      "name": "",
-      "password": ""
     },
     {
       "id": "ac3a",
@@ -237,6 +282,26 @@
       "id": "8384",
       "name": "User1",
       "password": "senha"
+    },
+    {
+      "id": "7f17",
+      "name": "pepe",
+      "password": "frete"
+    },
+    {
+      "id": "1ec4",
+      "name": "mano",
+      "password": "mana"
+    },
+    {
+      "id": "1855",
+      "name": "jasiel",
+      "password": "padron"
+    },
+    {
+      "id": "42a0",
+      "name": "jas",
+      "password": "123"
     }
   ]
 }
