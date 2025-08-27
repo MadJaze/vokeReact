@@ -171,7 +171,8 @@ width: fit-content;
 .ev_cards_inStock_Icons img {
 
 
-padding:  1px;
+padding: 23px;
+
 }
 .heart_icon {
 
@@ -244,6 +245,11 @@ margin: 5px;
     
 
 
+}
+
+.product_card_image{
+
+    padding-bottom: 10px;
 }
 
 

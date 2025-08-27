@@ -426,7 +426,16 @@ font-family: 'GalanoGrotesque', sans-serif;
   top: 0;
   left: 0;
   height: 100%;
+  
   background-color: #F3F4F6;
+
+}
+
+.nocturne-mode{
+
+position: absolute;
+top: 60px;
+right: 210px; 
 
 }
 

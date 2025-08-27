@@ -4,6 +4,8 @@ import { getProducts, deleteProduct, addProduct, getUsers, updateProduct} from "
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faPenToSquare } from '@fortawesome/free-regular-svg-icons';
 import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
+import {useContext} from 'react';
+import { ThemeContext } from './themeContext.js';
 import './cards.css'
 
 
@@ -26,6 +28,7 @@ const [ inStock, setInStock ] = useState();
 const [ liquidaTech, setLiquidaTech ] = useState(false);
 const [ brands, setBrands ] = useState("");
 
+  const { isDarkMode } = useContext(ThemeContext);
 
 //Filtro por marca (brand) Esse hook aqui accede dinamicamente aos parámetros do db.json (maravilha)
 
@@ -118,13 +121,26 @@ const handleUpdate = async (e) => {
 
 return (
 
-<>
+<div
+
+style={ { paddingBottom: isDarkMode ? "30px" : "30px", }}
+>
 <div className="cards-container">
  
-    <div className="ordenador">
+    <div className="ordenador" 
+    style={ { color: isDarkMode ? "#e8e7e7ff": "#2c2c2d" ,}}
+    
+    >
        
         <p>Ordenar por</p>
-        <select>
+        <select 
+        
+style={ { backgroundColor: isDarkMode ? "#2c2c2d" : "#e8e7e7ff",
+  color: isDarkMode ? "#e8e7e7ff": "#2c2c2d" ,
+padding: isDarkMode ? "10px": "10px",
+borderRadius: isDarkMode ? "10px": "10px",}}
+
+        >
 
         <option value="default">Mais Relevantes</option> 
         <option value="default">Preço menor a maior</option> 
@@ -152,7 +168,10 @@ return (
 
                     return (
 
-<div className='proper_card' key={product.id}> 
+<div className='proper_card' key={product.id} 
+
+style = {{ backgroundColor: isDarkMode ? "#2c2c2d" : "#e8e7e7ff",}}
+> 
 
             <div className='ev_cards_inStock_container'> 
 
@@ -168,7 +187,8 @@ return (
 
                             {/*Crud edição de produtos*/}
 
-                           <button className="edit-btn"> <FontAwesomeIcon icon={faPenToSquare} 
+                           <button className="edit-btn" 
+                             style={ { backgroundColor: isDarkMode ? "#2C2C2D" : "#E8E7E7", }}> <FontAwesomeIcon icon={faPenToSquare} 
                            onClick={ () => { 
                            setUpdateMenu(true); //Abre menú edição 
                            setProductToEdit(product); //Pega ID do produto 
@@ -183,9 +203,12 @@ return (
                               setLiquidaTech(product.liquidaTech);
                              setBrands(product.brand);
 
-                           }} className='heart_icon' /></button>
+                           }} className='heart_icon' style={  { color: isDarkMode ? "#fff" : "#000", }}/></button>
                                                                                                 
-                             <button className="delete-btn" onClick={ () => handleDelete(product.id)} ><FontAwesomeIcon icon={faTrashCan} className='heart_icon' /></button>
+                             <button className="delete-btn" onClick={ () => handleDelete(product.id)}
+                             
+                               style={ { backgroundColor: isDarkMode ? "#2C2C2D" : "#E8E7E7", }}
+                             ><FontAwesomeIcon icon={faTrashCan} className='heart_icon'style={  { color: isDarkMode ? "#fff" : "#000", }}/></button>
 
                              </div>
                 </div>
@@ -193,15 +216,30 @@ return (
 
     
 
- <img src={product.image} width="270" alt={product.brand} className='product_card_image'></img>
+ <img src={product.image} width="270" alt={product.brand} className='product_card_image'
+ 
+   style={ { boxShadow: isDarkMode ? "#121212" : "#F4F3ED",
+      borderRadius: isDarkMode ? "30px" : "30px",
+     marginBottom: isDarkMode ? "10px" : "10px",
+    }}
+ ></img>
 
-    <div className='product_card_condition'>   
+    <div className='product_card_condition'
+    
+    style={ { backgroundColor: isDarkMode ? "#121212" : "#F4F3ED",
+      color: isDarkMode ? "#fff" : "#000",
+    }}
+    
+    >   
         <img src="https://www.voke.shop/on/demandware.static/Sites-Voke-Site/-/default/dw4f718762/images/icons/badge-2.svg"
         width="25" alt="conditional issue"></img>
     <p> {product.condition} </p>
     </div>
 
-                <p className='product_card_name'>{product.name}</p>
+                <p className='product_card_name'
+                  style={ { 
+      color: isDarkMode ? "#fff" : "#000",
+    }}>{product.name}</p>
                        
 
             <div className='product_card_price'>
@@ -338,7 +376,7 @@ return (
 </div>
 
 
-</>
+</div>
 
 )
 

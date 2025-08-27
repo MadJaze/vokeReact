@@ -5,27 +5,38 @@ import img from '../recursos/reclame_aqui1.png';
 import {useState} from 'react'
 import img2 from '../recursos/reclame_aqui2.png';
 import VokeComponent from '../login';
+import {useContext} from 'react';
+import { ThemeContext } from './themeContext.js';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
 
 const [login, setLogin] = useState(true);
-
+ const { isDarkMode, toggleTheme} = useContext(ThemeContext);
 
 return (
 
-<footer>
+<footer
+>
 
- {login && (<div className='login-menu-required'  >
+ {login && (<div className='login-menu-required' 
+ 
+ style={ { backgroundColor: isDarkMode ? "black" : "#e8e7e7ff",}}
+ >
 
-<div className='login-logo'>
+<div className='login-logo' >
  <img 
             className="imagem-logo"
             src="https://www.voke.shop/on/demandware.static/Sites-Voke-Site/-/default/dwf3e412cb/images/voke-logo-255.png"
             alt="logo"
           />
 
-</div>
 
+</div>
+<FontAwesomeIcon icon={faMoon}  className='nocturne-mode' onClick={toggleTheme}
+
+style={ { color: isDarkMode ? "white" : "black",}}
+/>
 <div className="barra-rosa">
 
 </div>
@@ -35,7 +46,13 @@ return (
 
   </div> )}
 
-        <div id="footer-container-main">
+        <div id="footer-container-main"
+        
+        style={ { backgroundColor: isDarkMode ? "black" : "#295991",
+
+        
+        }}
+        >
 
           <div class="footer-container-sub"> 
             

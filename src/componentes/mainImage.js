@@ -5,13 +5,15 @@ import '../componentes/mainImage.css';
 import MenuAside from './menuAside';
 import {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom';
+import {useContext} from 'react';
+import { ThemeContext } from './themeContext.js';
 
 
 function MainImage() {
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 480)
     const { brand } = useParams(); //Trazer parámetro do db.json (important)
-
+    const { isDarkMode } = useContext(ThemeContext);
    
 
     useEffect(() => {
@@ -79,16 +81,39 @@ function MainImage() {
         
     return (
 
-    <div> 
+    <div   style = {{ 
+      backgroundColor: isDarkMode ? "#121212" : "#F4F3ED",
+     
+      }}> 
 
-         <div className="image-container">
+         <div className="image-container"
+         
+          style = {{ backgroundColor: isDarkMode ? '#121212' : '#F4F3ED',
+      color: isDarkMode ? "#fff" : "#000",
+      paddingTop: isDarkMode ? '5px' : '5px',
+      
+      }}>
 
-        <div className="main-image">
+        <div className="main-image" 
+        
+        style = {{ backgroundColor: isDarkMode ? '#121212' : '#F4F3ED',}}
+        
+        >
 
-        <ul class="breadcrumb">
-        <li class="a"> Home </li>
-        <li class="c"> {simbolo}</li>
-        <li class="b"> {brand? brand: "Liquida Tech"}</li>
+        <ul class="breadcrumb" 
+
+      
+
+        >
+        <li class="a"   style = {{ 
+      color: isDarkMode ? "#fff" : "hsl(212, 56%, 36%)",
+      }}> Home </li>
+        <li class="c"   style = {{ 
+      color: isDarkMode ? "#fff" : "hsl(212, 56%, 36%)",
+      }}> {simbolo}</li>
+        <li class="b" style = {{ 
+      color: isDarkMode ? "#fff" : "#6C757D",
+      }} > {brand? brand: "Liquida Tech"}</li>
         </ul>
 
         <img src= {imagem} alt={data} className="image"/>

@@ -19,9 +19,7 @@ const Header = () => {
 
     <header  
     
-    style = {{ backgroundColor: isDarkMode ? '#121212' : '#fff',
-      color: isDarkMode ? "#fff" : "#000",
-      }}
+  
     
     >
       <div className="ev-topBanner">
@@ -40,14 +38,23 @@ const Header = () => {
         </button>
       </div>
 
-      <div className="ev-header__columns">
+      <div className="ev-header__columns"
+      
+      style = {{ backgroundColor: isDarkMode ? '#121212' : '#fff',
+      color: isDarkMode ? "#fff" : "#000",
+      }}
+      >
         <div className="container" 
         
          style = {{ backgroundColor: isDarkMode ? '#121212' : '#fff',
       color: isDarkMode ? "#fff" : "#000",
       }}
         >
-          <button onClick={() => setMenuOpen(true)} className='barras-tablet-mode'>
+          <button onClick={() => setMenuOpen(true)} className='barras-tablet-mode'
+            
+style = {{ backgroundColor: isDarkMode ? '#0D1117' : '#EAECF0',
+      color: isDarkMode ? 'white' : 'black'
+      }}>
           <FontAwesomeIcon icon={faBars}  className='barras-tablet-mode'/>
           </button>
           <img
@@ -71,7 +78,7 @@ const Header = () => {
 
     {/* Container Search modo Tablet */}
 
-      <div className='header-tablet-mode'>
+      <div className='header-tablet-mode' >
 
           <input placeholder="Encontre o que precisa" className="search-field-tablet-mode" />
 
@@ -79,9 +86,22 @@ const Header = () => {
 
 
 
-      <div className="container-menu-rosa">
-        <div className="ev-header__menu">
-          <div className="icon-menu-toggle">
+      <div className="container-menu-rosa" 
+      
+      style = {{ 
+      backgroundColor: isDarkMode ? "#008000" : "#FE97C5",
+        color: isDarkMode ? "white" : "black",
+      }}
+
+      
+     >
+        <div className="ev-header__menu" 
+        
+         style = {{ 
+      backgroundColor: isDarkMode ? "#008000" : "#FE97C5",
+   
+      }}>
+          <div className="icon-menu-toggle" >
             <FontAwesomeIcon icon={faBars} />
             <p>menú</p>
           </div>
@@ -119,12 +139,33 @@ const Header = () => {
 
 <div className='overlay' onClick={() => setMenuOpen(false)}></div>
 
-<div className='menu-special-tablet'>
+<div className='menu-special-tablet'
 
-<div className='bemvindo-tablet-mode'>
+style = {{ backgroundColor: isDarkMode ? 'black' : '#fff',
+     
+      }}
+>
 
-<p>Olá, Seja bemvindo(a)</p>
-<p>Minha Conta</p>
+<div className='bemvindo-tablet-mode'
+
+style = {{ backgroundColor: isDarkMode ? '#0D1117' : '#EAECF0',
+      
+      }}
+
+>
+
+<p
+
+style = {{ backgroundColor: isDarkMode ? '#0D1117' : '#EAECF0',
+      
+      }}
+>Olá, Seja bemvindo(a)</p>
+<p
+
+style = {{ backgroundColor: isDarkMode ? '#0D1117' : '#EAECF0',
+      
+      }}
+>Minha Conta</p>
 
 </div>
 
