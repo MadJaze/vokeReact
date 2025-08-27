@@ -2,7 +2,7 @@ import '../App.css';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser, faHeart } from '@fortawesome/free-regular-svg-icons';
-import { faChevronRight, faChevronLeft, faBars, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faChevronLeft, faBars, faMoon, faFloppyDisk, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'; 
 import { useContext } from 'react';
 import { ThemeContext } from './themeContext.js';
@@ -66,10 +66,16 @@ style = {{ backgroundColor: isDarkMode ? '#0D1117' : '#EAECF0',
           <input placeholder="Encontre o que precisa" className="search-field" />
           <div className="coracao-carrinho">
               <Link to="/cadastraProduto">
-            <FontAwesomeIcon icon={faHeart} />
+            <FontAwesomeIcon icon={faFloppyDisk} 
+            
+            style={{color: isDarkMode ? 'white' : 'black'}}
+            /> 
             </Link>
             <Link to="/login">
-            <FontAwesomeIcon icon={faBars}  className='barras'/>
+            <FontAwesomeIcon icon={faUsers}  className='barras' 
+            style={{color: isDarkMode ? 'white' : 'black'}}
+            />
+            
             </Link> 
             <FontAwesomeIcon icon={faMoon}  className='nocturne-mode' onClick={toggleTheme}/>
           </div>
