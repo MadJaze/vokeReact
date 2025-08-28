@@ -1,7 +1,7 @@
 import '../App.css';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleUser, faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
 import { faChevronRight, faChevronLeft, faBars, faMoon, faFloppyDisk, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom'; 
 import { useContext } from 'react';
@@ -71,7 +71,7 @@ style = {{ backgroundColor: isDarkMode ? '#0D1117' : '#EAECF0',
             style={{color: isDarkMode ? 'white' : 'black'}}
             /> 
             </Link>
-            <Link to="/login">
+            <Link to="/showUsers">
             <FontAwesomeIcon icon={faUsers}  className='barras' 
             style={{color: isDarkMode ? 'white' : 'black'}}
             />

@@ -6,6 +6,7 @@ import VokeComponent from './login.js';
 import MainImage from './componentes/mainImage.js';
 import ProductForm2 from './componentes/postProduct.js'
 import { ThemeProvider } from './componentes/themeContext.js';
+import { ShowUsers } from './componentes/showUsers.js';
 
  //Brands icons
 
@@ -25,6 +26,7 @@ function Main() {
         imagemMobile="https://www.voke.shop/dw/image/v2/BKXD_PRD/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dw93c52be0/Liquida%20Tech%20[Mobile]@2x.png"/>}  />
         <Route path="/:brand" element={<MainImage/>} />
           <Route path="/login" element={<VokeComponent/>} />
+           <Route path="/showUsers" element={<ShowUsers/>} />
            <Route path="/cadastraProduto" element={<ProductForm2 onProductAdded={() => window.location.reload()} />} />
       </Routes>
      

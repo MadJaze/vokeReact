@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProducts, deleteProduct, addProduct, getUsers, updateProduct} from "./api";
+import { getProducts, deleteProduct, updateProduct} from "./api";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faPenToSquare } from '@fortawesome/free-regular-svg-icons';
 import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
