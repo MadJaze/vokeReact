@@ -245,6 +245,18 @@
       "inStock": 23,
       "liquidaTech": true,
       "brand": "samsung"
+    },
+    {
+      "id": "672f",
+      "name": "carro",
+      "sku": "carsSite.com",
+      "image": "https://imgs.search.brave.com/cOGxdsVYZB-eDGdjUuH-rvihiUfsR8JezIMY5qU1x0w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/a292aS5jb20uYnIv/aHMtZnMvaHViZnMv/cG9sbyUyMDBrbS0x/LnBuZz93aWR0aD01/NzYmaGVpZ2h0PTM2/NCZuYW1lPXBvbG8l/MjAwa20tMS5wbmc",
+      "originalPrice": 0.43,
+      "condition": "Muito Bom",
+      "color": "Verde",
+      "inStock": 1,
+      "liquidaTech": true,
+      "brand": "apple"
     }
   ],
   "users": [
@@ -332,6 +344,21 @@
       "id": "9849",
       "name": "jashsjlssdalsç",
       "password": "daadadaasddasdas"
+    },
+    {
+      "id": "2e32",
+      "name": "jasiel",
+      "password": "padron"
+    },
+    {
+      "id": "0140",
+      "name": "1234bien",
+      "password": "perfecto"
+    },
+    {
+      "id": "5172",
+      "name": "jasiel",
+      "password": "padron"
     }
   ]
 }

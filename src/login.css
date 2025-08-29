@@ -1,0 +1,56 @@
+/* Estilos base */
+
+
+
+
+/* Card */
+.card {
+  flex: 1;
+  
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 50%;
+}
+
+body.dark-mode .input-login {
+
+
+background-color: #4f4e4e;
+color: white;
+
+}
+
+body.dark-mode .label-input {
+
+  color: white;
+}
+
+.title-card-login {
+
+  color: #1e40af;
+
+}
+
+body.dark-mode .title-card-login {
+
+
+  color: white;
+}
+
+/* Botones */
+.buttonPrimary {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+body.dark-mode {
+
+
+  color: white;
+}
+

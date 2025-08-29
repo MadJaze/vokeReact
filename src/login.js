@@ -377,9 +377,9 @@ if (userExists) {
             
             <div style={styles.form}>
               <div style={styles.formGroup}>
-                <label style={styles.label}>Nome *</label>
+                <label style={styles.label} >Nome *</label>
                 <input
-                
+                className='input-login'
                          value={name}
                 onChange={(e) => setName(e.target.value)}
                   
@@ -391,6 +391,7 @@ if (userExists) {
               <div style={styles.formGroup}>
                 <label style={styles.label}>Senha *</label>
                 <input
+                className='input-login'
                         value={password}
             onChange={(e) => setPassword(e.target.value)}
                 type="password"

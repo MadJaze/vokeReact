@@ -23,7 +23,26 @@ useEffect(() => {
 
 }, []);
 
-const toggleTheme = () => setIsDarkMode(prev => !prev);
+const toggleTheme = () => {
+    
+  const newTheme = !isDarkMode;  // invierte o estado atual
+  setIsDarkMode(newTheme);
+
+  // Guardar en el storage
+  localStorage.setItem('darkMode', newTheme); // 'true' o 'false'
+   
+
+
+}
+
+//Carregar as preferencias do local storage ao iniciar o app
+
+useEffect(() => {
+    const savedTheme = localStorage.getItem("darkMode");
+    if (savedTheme !== null) {
+      setIsDarkMode(savedTheme === "true");
+    }
+  }, []);
 
 
 return (

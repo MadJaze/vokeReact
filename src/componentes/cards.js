@@ -30,6 +30,16 @@ const [ brands, setBrands ] = useState("");
 
   const { isDarkMode } = useContext(ThemeContext);
 
+
+      useEffect(() => {
+       if (isDarkMode) {
+         document.body.classList.add('dark-mode');
+       } else {
+         document.body.classList.remove('dark-mode');
+       }
+     }, [isDarkMode]);
+
+
 //Filtro por marca (brand) Esse hook aqui accede dinamicamente aos parámetros do db.json (maravilha)
 
 const { brand } = useParams(); 
@@ -301,19 +311,24 @@ style = {{ backgroundColor: isDarkMode ? "#2c2c2d" : "#e8e7e7ff",}}
 
 
     <form onSubmit={handleUpdate}>
-
+    <label className='label_update'>Nome</label>
     <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome do Produto" className='input_update'/>
+     <label className='label_update'>SKU</label>
     <input value={sku} onChange={(e) => setSku(e.target.value)} placeholder="SKU do Produto" className='input_update'/> 
+     <label className='label_update'>Imagem</label>
     <input value={image}  onChange= {(e) => setImage(e.target.value)} placeholder="Imagem do Produto (link)" className='input_update'/ >
+      <label className='label_update'>Preço Original</label>
     <input value={originalPrice} onChange ={(e) => setOriginalPrice(Number(e.target.value))} placeholder="Preço original do Produto" className='input_update'/>
+      <label className='label_update'>Condição</label>
     <input value={condition} onChange={(e) => setCondition(e.target.value)} placeholder="Condição do Produto" className='input_update'/>
+      <label className='label_update'>Estoque</label>
     <input value = {inStock} onChange={(e) => setInStock(Number(e.target.value))} placeholder="Quantidade do Produto" className='input_update'/>
     <br></br>
     <label>
       LiquidaTech?
     <input type="checkbox" value ={liquidaTech} onChange={(e) => setLiquidaTech(e.target.checked)} placeholder="LiquidaTech?" />
     </label>
-    <fieldset>
+    <fieldset className='product-form-radio-group'>
     <legend>Marca</legend>
     <label>
       <input 

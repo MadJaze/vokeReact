@@ -1,23 +1,48 @@
 import { useEffect, useState } from 'react';
 import {addUser, getUsers} from './componentes/api';
-
+import './login.css'
+import { useContext } from 'react';
+import { ThemeContext } from './componentes/themeContext';
 
 
 export default function VokeComponent({login, setLogin}) {
  
-const [name, setName] = useState("");
-const [password, setPassword ] = useState("");
+// Estados para o formulário de LOGIN
+const [loginName, setLoginName] = useState("");
+const [loginPassword, setLoginPassword] = useState("");
 
+// Estados para o formulário de CADASTRO
+const [registerName, setRegisterName] = useState("");
+const [registerPassword, setRegisterPassword] = useState("");
+
+const { isDarkMode} = useContext(ThemeContext);
 
 const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+       if (isDarkMode) {
+         document.body.classList.add('dark-mode');
+       } else {
+         document.body.classList.remove('dark-mode');
+       }
+     }, [isDarkMode]);
+
+
+
+
 
 const handleSubmit = async (e) => {
 
   alert("Usuario adicionado com sucesso")
 e.preventDefault();
-const newUser = { name, password };
+const newUser = { name: registerName, password: registerPassword };
 await addUser(newUser);
-setName(""); setPassword(""); 
+ // Limpar apenas os campos do cadastro
+  setRegisterName("");
+  setRegisterPassword("");
+  
+  // Atualizar a lista de usuários
+  fetchUsers();
 
 
 
@@ -26,7 +51,6 @@ const fetchUsers = async () => {
 
 
  const res = await getUsers(); //Extrair os users do JSON ...
-   
     console.log("users:", res.data);
     setUsers(res.data);
 
@@ -41,15 +65,16 @@ fetchUsers();
 }, [])
 
    
+// Função para fazer login
+const enterSystem = (e) => {
 
-const enterSystem = () => {
-
+e.preventDefault(); 
 const userExists = users.find(
-  (user) => user.name === name && user.password === password);
+  (user) => user.name === loginName && user.password === loginPassword);
 
 
 if (userExists) {
-  alert(`Bem-vindo ao sistema, ${name}!`);
+  alert(`Bem-vindo ao sistema, ${loginName}!`);
     setLogin(!login);
 } else {
   alert("Nome ou senha incorretos. Tente novamente.");}
@@ -102,7 +127,7 @@ if (userExists) {
     cardTitle: {
       fontSize: '1.25rem',
       fontWeight: '600',
-      color: '#1e40af',
+     
       marginBottom: '1.5rem',
       marginTop: '0'
     },
@@ -119,7 +144,7 @@ if (userExists) {
       display: 'block',
       fontSize: '0.875rem',
       fontWeight: '500',
-      color: '#374151',
+      
       marginBottom: '0.25rem'
     },
     input: {
@@ -185,7 +210,7 @@ if (userExists) {
       marginBottom: '1rem',
       marginTop: '0'
     }
-  };
+  } ;
 
 
 
@@ -203,6 +228,7 @@ if (userExists) {
     },
     card: {
       ...styles.card,
+      backgroundColor : isDarkMode ?  '#2C2C2D': 'white',
         width: isTablet? '89%': 'fit-content',
       padding: isMobile ? '1rem' : '1.5rem'
     },
@@ -217,15 +243,15 @@ if (userExists) {
   };
 
   return (
-    <div style={styles.container}>
+    <div >
       {/* Header */}
      
 
       {/* Main Content */}
 
   <div style={styles.createAccount}>
-              <h3 style={styles.createAccountTitle}>Sistema Bloqueado</h3>
-              <p style={styles.createAccountText}>Cadastre seu nome e senha para iniciar...</p>
+              <h3 >Sistema Bloqueado</h3>
+              <p >Cadastre seu nome e senha para iniciar...</p>
           
             </div>
 
@@ -235,15 +261,15 @@ if (userExists) {
           <form  style={responsiveStyles.card} onSubmit={enterSystem}>
           {/* Login Section */}
          
-            <h2 style={styles.cardTitle}>Login</h2>
+            <h2 style={styles.cardTitle} className='title-card-login'>Login</h2>
             
             <div style={styles.form}>
               <div style={styles.formGroup}>
                 <label style={styles.label}>Nome *</label>
                 <input
-                
-                         value={name}
-                onChange={(e) => setName(e.target.value)}
+                className='input-login'
+                         value={loginName}
+                onChange={(e) => setLoginName(e.target.value)}
                   
                   required
                   style={styles.input}
@@ -253,8 +279,9 @@ if (userExists) {
               <div style={styles.formGroup}>
                 <label style={styles.label}>Senha *</label>
                 <input
-                        value={password}
-            onChange={(e) => setPassword(e.target.value)}
+                className='input-login'
+                        value={loginPassword}
+            onChange={(e) => setLoginPassword(e.target.value)}
                 
                   required
                   style={styles.input}
@@ -283,13 +310,14 @@ if (userExists) {
 
           <form style={responsiveStyles.card}  onSubmit={handleSubmit}>
           
-            <h2 style={styles.cardTitle}>Cadastre seu User</h2>
+            <h2 style={styles.cardTitle} className='title-card-login'>Cadastre seu User</h2>
             
             <div style={styles.form}>
               <div style={styles.formGroup}>
-                <label style={styles.label}>Nome *</label>
+                <label style={styles.label} >Nome *</label>
                 <input
-                 value={name} onChange={(e) => setName(e.target.value)}
+                className='input-login'
+                 value={registerName} onChange={(e) => setRegisterName(e.target.value)}
                
                  
                   required
@@ -300,8 +328,8 @@ if (userExists) {
               <div style={styles.formGroup}>
                 <label style={styles.label}>Senha *</label>
                 <input
-                 value={password} onChange={(e) => setPassword(e.target.value)}
-                 
+                 value={registerPassword} onChange={(e) => setRegisterPassword(e.target.value)}
+                 className='input-login'
                  
                   required
                   style={styles.input}

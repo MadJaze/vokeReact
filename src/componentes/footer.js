@@ -4,7 +4,7 @@ import { faLinkedin, faSquareFacebook, faSquareYoutube } from '@fortawesome/free
 import img from '../recursos/reclame_aqui1.png';
 import {useState} from 'react'
 import img2 from '../recursos/reclame_aqui2.png';
-import VokeComponent from '../login';
+import VokeComponent from '../login2';
 import {useContext} from 'react';
 import { ThemeContext } from './themeContext.js';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';

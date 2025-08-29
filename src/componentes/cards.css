@@ -30,7 +30,7 @@ position: fixed;
   top: 50%;          
   left: 50%;  
   border-radius: 20px;
-  width: fit-content;       
+  width: 50%;       
   box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
   text-align: center;
   transform: translate(-50%, -50%); 
@@ -53,7 +53,8 @@ position: fixed;
 
     padding: 10px;
     width: 80%; 
-    margin:  5px 0;
+    border-radius: 10px;
+    margin:  7px 0;
 
 
 
@@ -64,6 +65,7 @@ position: fixed;
 
 background-color: #1E40AF;
 color: white;
+border-radius: 10px;
 padding: 20px;
 margin: 10px;
 
@@ -360,4 +362,21 @@ margin: 0;
      width: 85%; 
 }
 
+}
+
+body.dark-mode  .update-menu h4 {
+
+
+
+    color: #0c43f7;
+}
+
+body.dark-mode .update-menu {
+  background-color: #1f2937;
+
+}
+
+body.dark-mode .input_update {
+  background-color: #4F4E4E;
+  color: #d1d5db;
 }
